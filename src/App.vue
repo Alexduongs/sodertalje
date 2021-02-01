@@ -17,8 +17,10 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./src/_variables.scss";
 #app {
   $color: #232323;
+  
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
