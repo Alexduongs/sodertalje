@@ -1,31 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <sidebar />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Sidebar from './components/sidebar.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Sidebar,
   }
 }
 </script>
-
-<style lang="scss">
-@import "./src/_variables.scss";
-#app {
-  $color: #232323;
-  
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: $color;
-  margin-top: 60px;
-}
-</style>
