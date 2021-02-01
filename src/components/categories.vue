@@ -342,7 +342,6 @@ props: {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 @import "./src/_variables.scss";
-
 .flex-wrapper-eight {
   background-color: $silver;
   margin-right: 31px;
