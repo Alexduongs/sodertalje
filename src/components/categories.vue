@@ -1,5 +1,5 @@
 
-<template>
+<!--<template>
   <div class="group-554">
     <div class="flex-wrapper-nine">
       <p class="tematiskt-omrade">{{ tematisktOmrade }}</p>
