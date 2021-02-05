@@ -12,8 +12,8 @@
         :nullable-select="true"
         ref="suggestComponent"
         placeholder="Sök..."
-        value-attribute="id"
-        display-attribute= "description"
+        value-attribute="Type"
+        display-attribute= "Description"
         @select="onSuggestSelect">
       
         <!-- <test-input placeholder="Search information..." /> -->
@@ -98,25 +98,23 @@
 
            axios
       .get('/data.json')
-      .then(response => (this.dataItem = response.data)).then(json => {
+      .then(response => (this.Elements = response.data.Elements)).then(json => {
 
              let result = []
-             const fields = ['text', 'description', 'link', 'hej']
+           
+             const fields = ['Label', 'Type', 'Description', 'Tematiskt Områrde', 'Dokumenttyp', 'År', 'Dokumentansvarig kontor', 'vilka dokument det nya styrdokumentet ersätter (dokumentnamn & diarienummer)', 'Betydelse för Telgekoncernen', 'Image', 'Status', 'GLOBALA MÅL', 'KF Målområde', 'KF-Mål']
    
              var json = Object.entries(json);
-              json.forEach((part, j) => {
-                                 
-              var part = Object.entries(part);
-               //console.log(partt[1][1]);  
+             
+              json.forEach((part, j) => {                                
          
                 part.forEach((el,i) => {
                   if (!result[j]) {
                     result.push({
-                      id: j+1
+                      Type: j+1
                     })                
                   }
-                  
-                 console.log(result.description); 
+      
                   result[j][fields[i]]  = el
               
                 })
