@@ -1,40 +1,34 @@
 <template>
 <body>
   <div class="row">
-  <div class="column">
-    <div class="card">
-      <h3>Card 1</h3>
-      <p>Some text</p>
-      <p>Some text</p>
+    <div class="card" id="hej">
+            <button @click='getDataItem'>Get Data</button>
+      <div v-for="dataItem in jsonDataList" :key='dataItem'>
+          <div class="card">{{ dataItem.authority }}</div>
+      </div>
     </div>
   </div>
-
-  <div class="column">
-    <div class="card">
-      <h3>Card 2</h3>
-      <p>Some text</p>
-      <p>Some text</p>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <h3>Card 3</h3>
-      <p>Some text</p>
-      <p>Some text</p>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <h3>Card 4</h3>
-      <p>Some text</p>
-      <p>Some text</p>
-    </div>
-  </div>
-</div>
 </body>
 </template>
+
+<script>
+export default {
+  name: "Data",
+  data() {
+    return {
+      jsonDataList: [],
+
+    };
+  },
+  methods: {
+    getDataItem() {
+      fetch("data.json")
+        .then(response => response.json())
+        .then(data => (this.jsonDataList = data.dataItem));
+    }
+  }
+};
+</script>
 
 
 
@@ -53,19 +47,8 @@ body{
 }
 
 .column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+  width: 100%;
+  display: flex;
 }
 
 /* Style the counter cards */
@@ -77,8 +60,3 @@ body{
 }
 </style>
 
-<script>
-export default {
-  
-}
-</script>

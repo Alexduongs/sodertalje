@@ -1,12 +1,13 @@
 {
     "dataItem": [ 
-        {
+        {   "id":1,
             "authority": "Miljönämnden",
             "owner": "Alex",
             "type": "Strategi",
             "number": "1"
         }, 
         {
+            "id":2,
             "authority": "Samhällsbyggnad",
             "owner": "Katja",
             "type": "Handlingsplan",
