@@ -132,4 +132,8 @@ li {
   list-style: none;
 }
 
+ .navbarside {
+    display: none;
+  }
+
 </style>

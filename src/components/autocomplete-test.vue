@@ -4,16 +4,16 @@
       <vue-suggest class="asdad" pattern="\w+"
        
         :list="getList"
-        :max-suggestions="10"
+        :max-suggestions="20"
         :min-length="3"
         :debounce="200"
-        :filter-by-query="false"
+        :filter-by-query="true"
 
         :nullable-select="true"
         ref="suggestComponent"
         placeholder="Sök..."
-        value-attribute="Type"
-        display-attribute= "Description"
+        value-attribute = {Elements}
+        display-attribute=  "Label"
         @select="onSuggestSelect">
       
         <!-- <test-input placeholder="Search information..." /> -->
@@ -77,7 +77,7 @@
 
         const { suggestion, query } = scope;
 
-        let result = this.$refs.suggestComponent.displayProperty(suggestion.Type.Label);
+        let result = this.$refs.suggestComponent.displayProperty(suggestion.Label);
         
 
         if (!query) return result;
@@ -103,21 +103,19 @@
       .then(response => (this.Elements = response.data.Elements)).then(json => {
 
              let result = []
-           
-             const fields = ['Label', 'Type', 'Description', 'Tematiskt Områrde', 'Dokumenttyp', 'År', 'Dokumentansvarig kontor', 'vilka dokument det nya styrdokumentet ersätter (dokumentnamn & diarienummer)', 'Betydelse för Telgekoncernen', 'Image', 'Status', 'GLOBALA MÅL', 'KF Målområde', 'KF-Mål']
    
           var jsonn = Object.entries(json);
              
               jsonn.forEach((part, j) => {                                
          
-                part.forEach((el,i) => {
+                part.forEach((el) => {
                   if (!result[j]) {
                     result.push({
-                      Type: j+1
+                      id: j+1
                     })                
                   }
       
-                  result[j][fields[i]]  = el
+                  result[j] = el
               
                 })
               })
@@ -229,5 +227,9 @@
   .vue-simple-suggest-enter.suggestions,
   .vue-simple-suggest-leave-to.suggestions {
     opacity: 0 !important;
+  }
+
+  .navbarside {
+    display: none;
   }
 </style>
