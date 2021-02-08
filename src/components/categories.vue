@@ -4,7 +4,7 @@
     <div class="card" id="hej">
             <button @click='getDataItem'>Get Data</button>
       <div v-for="dataItem in jsonDataList" :key='dataItem'>
-          <div class="card">{{ dataItem.authority }}</div>
+          <div class="card">{{ dataItem.Type }}</div>
       </div>
     </div>
   </div>
@@ -24,7 +24,7 @@ export default {
     getDataItem() {
       fetch("data.json")
         .then(response => response.json())
-        .then(data => (this.jsonDataList = data.dataItem));
+        .then(data => (this.jsonDataList = data.Elements));
     }
   }
 };

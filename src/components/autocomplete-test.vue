@@ -71,18 +71,20 @@
       }
     },
     methods: {
+      
       boldenSuggestion(scope) {
         if (!scope) return scope;
 
         const { suggestion, query } = scope;
 
-        let result = this.$refs.suggestComponent.displayProperty(suggestion);
+        let result = this.$refs.suggestComponent.displayProperty(suggestion.Type.Label);
+        
 
         if (!query) return result;
-
         const texts = query.split(/[\s-_/\\|.]/gm).filter(t => !!t) || [''];
         return result.replace(new RegExp('(.*?)(' + texts.join('|') + ')(.*?)','gi'), '$1<b>$2</b>$3');
       },
+      
       goto (url) {
         window.open(url, '_blank').focus()
       },
@@ -104,9 +106,9 @@
            
              const fields = ['Label', 'Type', 'Description', 'Tematiskt Områrde', 'Dokumenttyp', 'År', 'Dokumentansvarig kontor', 'vilka dokument det nya styrdokumentet ersätter (dokumentnamn & diarienummer)', 'Betydelse för Telgekoncernen', 'Image', 'Status', 'GLOBALA MÅL', 'KF Målområde', 'KF-Mål']
    
-             var json = Object.entries(json);
+          var jsonn = Object.entries(json);
              
-              json.forEach((part, j) => {                                
+              jsonn.forEach((part, j) => {                                
          
                 part.forEach((el,i) => {
                   if (!result[j]) {
