@@ -4,15 +4,15 @@
       <vue-suggest class="asdad" pattern="\w+"
        
         :list="getList"
-        :max-suggestions="20"
+        :max-suggestions="10"
         :min-length="3"
         :debounce="200"
         :filter-by-query="true"
         :nullable-select="true"
         ref="suggestComponent"
         placeholder="Sök..."
-        value-attribute = "Label"
-        display-attribute=  {Elements}
+        value-attribute = "Title"
+        display-attribute= {Elements}
         @select="onSuggestSelect">
       
         <!-- <test-input placeholder="Search information..." /> -->
@@ -30,11 +30,10 @@
             <span>No results</span>
           </div>
         </template>
-        <div slot="suggestion-item" slot-scope="scope" :title="scope.suggestion.Description">
+        <div slot="suggestion-item" slot-scope="scope" :title="scope.suggestion.Description" @click.stop="goto(scope.suggestion.URL)">
           <div class="text">
             <span v-html="boldenSuggestion(scope)"></span>
           </div>         
-          <button @click.stop="goto(scope.suggestion.URL)">Open WIKI</button>
         </div> 
       </vue-suggest>
 
@@ -96,7 +95,7 @@
 
              let result = []
    
-          var jsonn = Object.entries(json);
+             var jsonn = Object.entries(json);
              
               jsonn.forEach((part, j) => {                                
          
@@ -105,10 +104,8 @@
                     result.push({
                       id: j+1
                     })                
-                  }
-      
-                  result[j] = el
-              
+                  }     
+                  result[j] = el            
                 })
               })
               resolve(result)
