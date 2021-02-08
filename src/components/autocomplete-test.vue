@@ -8,42 +8,34 @@
         :min-length="3"
         :debounce="200"
         :filter-by-query="true"
-
         :nullable-select="true"
         ref="suggestComponent"
         placeholder="Sök..."
-        value-attribute = {Elements}
-        display-attribute=  "Label"
+        value-attribute = "Label"
+        display-attribute=  {Elements}
         @select="onSuggestSelect">
       
         <!-- <test-input placeholder="Search information..." /> -->
-
         <template slot="misc-item-above" slot-scope="{ suggestions, query }">
           <div class="misc-item">
             <span>You're searching for '{{ query }}'.</span>
           </div>
-
           <template v-if="suggestions.length > 0">
             <div class="misc-item">
               <span>{{ suggestions.length }} suggestions are shown...</span>
             </div>
             <hr>
           </template>
-
           <div class="misc-item" v-else-if="!loading">
             <span>No results</span>
           </div>
         </template>
-
-        <div slot="suggestion-item" slot-scope="scope" :title="scope.suggestion.description">
+        <div slot="suggestion-item" slot-scope="scope" :title="scope.suggestion.Description">
           <div class="text">
             <span v-html="boldenSuggestion(scope)"></span>
-          </div>
-          
-          <button @click.stop="goto(scope.suggestion.link)">Open WIKI</button>
-        </div>
-
-   
+          </div>         
+          <button @click.stop="goto(scope.suggestion.URL)">Open WIKI</button>
+        </div> 
       </vue-suggest>
 
       <p v-if="selected"><pre class="selected hljs"><code v-html="selected"></code></pre></p>
