@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="lapp">
     <div class="example">
       <vue-suggest class="asdad" pattern="\w+"
        
@@ -18,12 +18,9 @@
         <!-- <test-input placeholder="Search information..." /> -->
         <template slot="misc-item-above" slot-scope="{ suggestions, query }">
           <div class="misc-item">
-            <span>You're searching for '{{ query }}'.</span>
+            <span>Du har sökt på '{{ query }}'.</span>
           </div>
           <template v-if="suggestions.length > 0">
-            <div class="misc-item">
-              <span>{{ suggestions.length }} suggestions are shown...</span>
-            </div>
             <hr>
           </template>
           <div class="misc-item" v-else-if="!loading">
@@ -120,54 +117,30 @@
   
 </script>
 
-<style>
-  #app {
+<style scoped>
+.asdad{
+  margin: 20px;
+}
+  #lapp {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
-    margin: 60px auto 0;
-    width: 800px;
-    height: 792px;
     display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
-  #app .log-container .title {
+  #lapp .log-container .title {
     position: sticky;
   }
 
-  #app .example {
+  #lapp .example {
     width: 506px;
   }
 
-  #app .example,
-  #app .log-container,
-  #app .log {
-    padding: 0 16px;
-  }
 
-  #app .log-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    min-width: 230px;
-    max-width: 230px;
-  }
-
-  #app .log {
-    height: 100%;
-    border-radius: 3px;
-    border: 1px solid #aaa;
-    text-align: right;
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-
-  #app .log pre {
-    white-space: pre-wrap;
-  }
-
-  #app pre.selected {
+  #lapp pre.selected {
     margin: 8px 0;
     height: 295px;
     overflow-x: scroll;
@@ -176,23 +149,23 @@
     border-radius: 4px;
   }
 
-  #app .v-model-event {
+  #lapp .v-model-event {
     background-color: white;
     border: 1px solid #cde;
     border-radius: 4px;
   }
 
-  #app .v-model-event.selected {
+  #lapp .v-model-event.selected {
     color: red;
   }
 
-  #app .v-model-event:hover {
+  #lapp .v-model-event:hover {
     border: 1px solid #2874D5;
     background-color: #2874D5;
     color: white;
   }
 
-  #app .vue-simple-suggest .suggest-item .text {
+  #lapp .vue-simple-suggest .suggest-item .text {
     display: inline-block;
     line-height: 1;
     vertical-align: text-bottom;
@@ -201,11 +174,11 @@
     text-overflow: ellipsis;
   }
 
-  #app .vue-simple-suggest .suggest-item .text span {
+  #lapp .vue-simple-suggest .suggest-item .text span {
     white-space: nowrap;
   }
 
-  #app .vue-simple-suggest .suggest-item button {
+  #lapp .vue-simple-suggest .suggest-item button {
     float: right;
     line-height: 1;
     margin-left: 4px;
@@ -219,9 +192,5 @@
   .vue-simple-suggest-enter.suggestions,
   .vue-simple-suggest-leave-to.suggestions {
     opacity: 0 !important;
-  }
-
-  .navbarside {
-    display: none;
   }
 </style>
