@@ -35,20 +35,14 @@ export default {
 <style lang="scss" scoped>
 @import "./src/_variables.scss";
 
-
-* {
-  box-sizing: border-box;
-
+.row {
+  width: 50%;
+  float: right;
 }
 
-body{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.column {
-  width: 100%;
-  display: flex;
+.column {display: flex;
+  justify-content: end;
+  width: 300px;
 }
 
 /* Style the counter cards */

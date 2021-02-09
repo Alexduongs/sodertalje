@@ -3,13 +3,13 @@
     <sidebar />
       <autocomplete />
  <autocomplete-test />
-     <categories />
+     <!-- <categories /> -->
   </div>
 </template>
 
 <script>
 import Sidebar from './components/sidebar.vue'
-import Categories from './components/categories.vue'
+// import Categories from './components/categories.vue'
 import Autocomplete from './components/autocomplete.vue'
 import AutocompleteTest from './components/autocomplete-test.vue'
 
@@ -21,7 +21,7 @@ export default {
   },
   components: {
     Sidebar,
-    Categories,
+    // Categories,
     Autocomplete,
      AutocompleteTest
   }
