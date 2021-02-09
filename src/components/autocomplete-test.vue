@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="lapp">
     <div class="example">
       <vue-suggest class="asdad" pattern="\w+"
         :list="getList"
@@ -122,54 +122,30 @@
     }  
 </script>
 
-<style>
-  #app {
+<style scoped>
+.asdad{
+  margin: 20px;
+}
+  #lapp {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
-    margin: 60px auto 0;
-    width: 800px;
-    height: 792px;
     display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
-  #app .log-container .title {
+  #lapp .log-container .title {
     position: sticky;
   }
 
-  #app .example {
+  #lapp .example {
     width: 506px;
   }
 
-  #app .example,
-  #app .log-container,
-  #app .log {
-    padding: 0 16px;
-  }
 
-  #app .log-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    min-width: 230px;
-    max-width: 230px;
-  }
-
-  #app .log {
-    height: 100%;
-    border-radius: 3px;
-    border: 1px solid #aaa;
-    text-align: right;
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-
-  #app .log pre {
-    white-space: pre-wrap;
-  }
-
-  #app pre.selected {
+  #lapp pre.selected {
     margin: 8px 0;
     height: 295px;
     overflow-x: scroll;
@@ -178,22 +154,23 @@
     border-radius: 4px;
   }
 
-  #app .v-model-event {
+  #lapp .v-model-event {
     background-color: white;
     border: 1px solid #cde;
     border-radius: 4px;
   }
 
-  #app .v-model-event.selected {
+  #lapp .v-model-event.selected {
     color: red;
   }
+
   #app .v-model-event:hover {
     border: 1px solid grey;
     background-color: #28d5af!important;
     color: white;
   }
 
-  #app .vue-simple-suggest .suggest-item .text {
+  #lapp .vue-simple-suggest .suggest-item .text {
     display: inline-block;
     line-height: 1;
     vertical-align: text-bottom;
@@ -202,7 +179,7 @@
     text-overflow: ellipsis;
   }
 
-  #app .vue-simple-suggest .suggest-item .text span {
+  #lapp .vue-simple-suggest .suggest-item .text span {
     white-space: nowrap;
   }
 
@@ -215,6 +192,7 @@
   .vue-simple-suggest-leave-to.suggestions {
     opacity: 0 !important;
   }
+  
 .vue-simple-suggest.designed .suggestions {
     width: 900px;
   }
@@ -241,4 +219,5 @@
     position: absolute;
     bottom:0;
   }
+
 </style>
