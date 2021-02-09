@@ -2,42 +2,51 @@
   <div id="app">
     <div class="example">
       <vue-suggest class="asdad" pattern="\w+"
-       
         :list="getList"
         :max-suggestions="10"
         :min-length="3"
         :debounce="200"
         :filter-by-query="true"
         :nullable-select="true"
+          :controls="{
+          selectionUp: [38, 33],
+          selectionDown: [40, 34],
+          select: [13, 36],
+          showList: [40],
+          hideList: [27, 35]
+        }"
+        :mode="mode"
         ref="suggestComponent"
         placeholder="Sök..."
-        value-attribute = "Title"
-        display-attribute= {Elements}
+        value-attribute= "Elements.Label"
+        display-attribute= "Label"
         @select="onSuggestSelect">
       
         <!-- <test-input placeholder="Search information..." /> -->
         <template slot="misc-item-above" slot-scope="{ suggestions, query }">
           <div class="misc-item">
-            <span>You're searching for '{{ query }}'.</span>
+            <span>Du sökte på '{{ query }}'.</span>
           </div>
           <template v-if="suggestions.length > 0">
             <div class="misc-item">
-              <span>{{ suggestions.length }} suggestions are shown...</span>
+              <span>{{ suggestions.length }} dokument hittades...</span>
             </div>
             <hr>
           </template>
           <div class="misc-item" v-else-if="!loading">
-            <span>No results</span>
+            <span>Inget resultat</span>
           </div>
         </template>
-        <div slot="suggestion-item" slot-scope="scope" :title="scope.suggestion.Description" @click.stop="goto(scope.suggestion.URL)">
+        <div slot="suggestion-item" slot-scope="scope" @click.stop="goto(scope.suggestion.URL)">
           <div class="text">
-            <span v-html="boldenSuggestion(scope)"></span>
-          </div>         
+            <span v-html="boldenSuggestion(scope)"> {{ scope.suggestion.Type }} </span>
+          </div><br/> 
+           <div class="info"> 
+            <span v-if="scope.suggestion.Globalgoals"> {{ scope.suggestion.Globalgoals }} </span> <br/>
+           <span v-if="scope.suggestion.Established"> Skapat {{ scope.suggestion.Established }} </span>
+            </div>      
         </div> 
       </vue-suggest>
-
-      <p v-if="selected"><pre class="selected hljs"><code v-html="selected"></code></pre></p>
    
     </div>
   </div>
@@ -85,9 +94,6 @@
       getList () {
           
         return new Promise((resolve) => {
-          //let url = `https://www.googleapis.com/books/v1/volumes?printType=books&q=${inputValue}`
-          //let url = `https://en.wikipedia.org/w/api.php?origin=*&action=opensearch&namespace=*&search=${inputValue}&limit=10&namespace=0&format=json`
-          // this.$refs.suggestComponent.clearSuggestions()
 
            axios
       .get('/data.json')
@@ -111,10 +117,12 @@
               resolve(result)
             })
           })
-        }
+        },
+        onSuggestHover (suggestion) {
+        this.suggestion('hover', suggestion);
+      },
       }
-    }
-  
+    }  
 </script>
 
 <style>
@@ -182,10 +190,9 @@
   #app .v-model-event.selected {
     color: red;
   }
-
   #app .v-model-event:hover {
-    border: 1px solid #2874D5;
-    background-color: #2874D5;
+    border: 1px solid grey;
+    background-color: #28d5af;
     color: white;
   }
 
@@ -202,12 +209,6 @@
     white-space: nowrap;
   }
 
-  #app .vue-simple-suggest .suggest-item button {
-    float: right;
-    line-height: 1;
-    margin-left: 4px;
-  }
-
   .vue-simple-suggest-enter-active.suggestions,
   .vue-simple-suggest-leave-active.suggestions {
     transition: opacity .2s;
@@ -217,8 +218,25 @@
   .vue-simple-suggest-leave-to.suggestions {
     opacity: 0 !important;
   }
+.vue-simple-suggest.designed .suggestions {
+    width: 900px;
+  }
 
-  .navbarside {
-    display: none;
+ #app .vue-simple-suggest .suggest-item {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 6px;
+    width: 270px;
+    height: 300px;
+    border: solid 1px grey;
+  }
+
+ #app .vue-simple-suggest .suggest-item:hover {
+    color: "red";
+  }
+   #app .vue-simple-suggest .info {
+    position: absolute;
+    bottom:0;
   }
 </style>
