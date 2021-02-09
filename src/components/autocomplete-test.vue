@@ -18,7 +18,7 @@
         :mode="mode"
         ref="suggestComponent"
         placeholder="Sök..."
-        value-attribute= "Label"
+        value-attribute= "Elements.Label"
         display-attribute= "Label"
         @select="onSuggestSelect">
       
@@ -39,7 +39,7 @@
         </template>
         <div slot="suggestion-item" slot-scope="scope" @click.stop="goto(scope.suggestion.URL)">
           <div class="text">
-            <span v-html="boldenSuggestion(scope)"> {{ scope.suggestion.Label }} </span>
+            <span v-html="boldenSuggestion(scope)"> {{ scope.suggestion.Type }} </span>
           </div><br/> 
            <div class="info"> 
             <span v-if="scope.suggestion.Globalgoals"> {{ scope.suggestion.Globalgoals }} </span> <br/>
@@ -118,6 +118,9 @@
             })
           })
         },
+        onSuggestHover (suggestion) {
+        this.suggestion('hover', suggestion);
+      },
       }
     }  
 </script>
@@ -166,7 +169,7 @@
 
   #app .v-model-event:hover {
     border: 1px solid grey;
-    background-color: #28d5af!important;
+    background-color: #28d5af;
     color: white;
   }
 
@@ -208,13 +211,8 @@
   }
 
  #app .vue-simple-suggest .suggest-item:hover {
-    background-color: red!important;
+    color: "red";
   }
-
-  #app .vue-simple-suggest .suggest-item.selected {
-    background-color: green!important;
-  }
-
    #app .vue-simple-suggest .info {
     position: absolute;
     bottom:0;
