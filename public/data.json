@@ -345,7 +345,8 @@
             "Image": "https://img.icons8.com/ios/250/000000/book.png",
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/globalassets/kof/dokument/handlingsplan-for-folkbibliotekens-strukturutveckling.pdf",
-            "KFTargetArea": "2 Södertäljes medborgare och välfärd - Social Hållbarhet"
+            "KFTargetArea": "2 Södertäljes medborgare och välfärd - Social Hållbarhet",
+            "CoverImg":"https://i.ibb.co/0jVB9wT/handlingsplan-for-folkbibliotekens-strukturutveckling.png"
         },
         {
             "Label": "HANDLINGSPLAN FÖR SUICIDPREVENTION",
@@ -364,7 +365,8 @@
             "Image": "https://img.icons8.com/ios/250/000000/delete-sign.png",
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/handlingsplan-for-suicidprevention.pdf",
-            "KFTargetArea": "4 Ekologiskt hållbara kommunen"
+            "KFTargetArea": "4 Ekologiskt hållbara kommunen",
+            "CoverImg":"https://i.ibb.co/F4cyHmy/handlingsplan-for-suicidprevention.png"
         },
         {
             "Label": "HANDLINGSPLAN MOT VÅLD I NÄRA RELATION",
@@ -375,7 +377,8 @@
             "Image": "https://img.icons8.com/ios/250/000000/delete-sign.png",
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/handlingsplan-mot-vald-i-nara-relation.pdf",
-            "KFTargetArea": "4 Ekologiskt hållbara kommunen"
+            "KFTargetArea": "4 Ekologiskt hållbara kommunen",
+            "CoverImg":"https://i.ibb.co/tqN59HC/handlingsplan-mot-vald-i-nara-relation.png"
         },
         {
             "Label": "HANDLINGSPLAN 'UTVECKLINGSKRAFT I SÖDERTÄLJE' 2016-2023",
@@ -403,7 +406,8 @@
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/informationssakerhetsPOLICY.pdf",
             "GlobalGoal": "MÅL 2",
-            "KFTargetArea": "2 Södertäljes medborgare och välfärd - Social Hållbarhet"
+            "KFTargetArea": "2 Södertäljes medborgare och välfärd - Social Hållbarhet",
+            "CoverImg":"https://i.ibb.co/q1cX2vP/informationssakerhets-POLICY.png"
         },
         {
             "Label": "INTERNATIONELL POLICY 2011-2020",
@@ -416,7 +420,8 @@
             "Image": "https://img.icons8.com/ios/250/000000/around-the-globe.png",
             "Status": "Revidering pågår",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/internationell-POLICY.pdf",
-            "KFTargetArea": "4 Ekologiskt hållbara kommunen"
+            "KFTargetArea": "4 Ekologiskt hållbara kommunen",
+            "CoverImg":"https://i.ibb.co/Ms0t3Rb/internationell-POLICY.png"
         },
         {
             "Label": "INVENTERING AV KULTURMILJÖER I SÖDERTÄLJE KOMMUN",
@@ -427,7 +432,8 @@
             "SignificanceTelge": "NEJ",
             "Image": "https://img.icons8.com/ios/250/000000/greek-pillar-capital.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/inventering-av-kulturmiljoer-i-sodertalje-kommun.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/inventering-av-kulturmiljoer-i-sodertalje-kommun.pdf",
+            "CoverImg":"https://i.ibb.co/L8v2dBx/inventering-av-kulturmiljoer-i-sodertalje-kommun.png"
         },
         {
             "Label": "IT VISION & STRATEGI",
@@ -441,7 +447,8 @@
             "SignificanceTelge": "NEJ",
             "Image": "https://img.icons8.com/ios/250/000000/upload-2.png",
             "Status": "Revidering pågår",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/it-vision-och-STRATEGI.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/it-vision-och-STRATEGI.pdf",
+            "CoverImg":"https://i.ibb.co/Kh1CxF1/it-vision-och-STRATEGI.png"
         },
         {
             "Label": "KEMIKALIEPLAN",
@@ -452,7 +459,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/test-tube.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/kemikalieplan-2019-2021.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/kemikalieplan-2019-2021.pdf",
+            "CoverImg":"https://i.ibb.co/v3LWTTr/kemikalieplan-2019-2021.png"
         },
         {
             "Label": "KOSTPOLICY",
@@ -489,7 +497,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/lightning-bolt.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/krisplan.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/krisplan.pdf",
+            "CoverImg":"https://i.ibb.co/hMFXRzT/krisplan.png"
         },
         {
             "Label": "LANDSBYGDSSTRATEGI",
@@ -539,7 +548,8 @@
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/miljobokslut_2019slutgiltig.pdf",
             "GlobalGoal": "MÅL 12",
-            "Projektledare": "Tomas Thernström"
+            "Projektledare": "Tomas Thernström",
+            "CoverImg":"https://i.ibb.co/dcFnJmZ/miljobokslut-2019slutgiltig.png"
         },
         {
             "Label": "MILJÖ-OCH KLIMAT PROGRAM 2018-2021",
@@ -556,7 +566,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/earth-planet.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/miljo--och-klimatprogram-2018-2021.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/miljo--och-klimatprogram-2018-2021.pdf",
+            "CoverImg":"https://i.ibb.co/XJrtCt6/miljo-och-klimatprogram-2018-2021.png"
         },
         {
             "Label": "MÅL & BUDGET 2020-22",
@@ -585,7 +596,8 @@
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/mal-och-riktlinjer-for-sodertalje-kommuns-minoritetspolitiska-arbete.pdf",
             "Revision": "Utgått",
             "GlobalGoal": "MÅL 12",
-            "Projektledare": "Åsa Tjusberg"
+            "Projektledare": "Åsa Tjusberg",
+            "CoverImg":"https://i.ibb.co/vVDmHxf/mal-och-riktlinjer-for-sodertalje-kommuns-minoritetspolitiska-arbete.png"
         },
         {
             "Label": "MÅNGFALDSPOLICY",
@@ -595,7 +607,8 @@
             "SignificanceTelge": "NEJ",
             "Image": "https://img.icons8.com/ios/250/000000/nut.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/mangfaldspolicy2.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/mangfaldspolicy2.pdf",
+            "CoverImg":"https://i.ibb.co/y0q8Qr4/mangfaldspolicy2.png"
         },
         {
             "Label": "NÄRINGLIVSSTRATEGI 2016-2022",
@@ -611,7 +624,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/refund-2.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/naringslivsSTRATEGI_2016-2022.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/naringslivsSTRATEGI_2016-2022.pdf",
+            "CoverImg": "https://i.ibb.co/QHym1Z9/naringslivs-STRATEGI-2016-2022.png"
         },
         {
             "Label": "ODLINGSSTRATEGI - DEL 1",
@@ -631,7 +645,8 @@
             "Telgekoncernen": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/sun.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/odlingsSTRATEGI-2018-2030.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/odlingsSTRATEGI-2018-2030.pdf",
+            "CoverImg": "https://i.ibb.co/ZKhmBJH/odlingsstrategi-2018-2030-1.png"
         },
         {
             "Label": "ODLINGSSTRATEGI - DEL 2 HANDLINGSPLA N",
@@ -651,7 +666,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/sun.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/odlingsstrategi-2018-2030.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/odlingsstrategi-2018-2030.pdf",
+            "CoverImg": "https://i.ibb.co/ZKhmBJH/odlingsstrategi-2018-2030-1.png"
         },
         {
             "Label": "PARKERINGSTRATEGI FÖR SÖDERTÄLJE STADSKÄRNA",
@@ -662,7 +678,8 @@
             "SignificanceTelge": "NEJ",
             "Image": "https://img.icons8.com/ios/250/000000/notepad.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/contentassets/2ea5d1ec529a4fb1ac8d1326e278f764/parkeringsstrategi-sodertalje-stadskarna_v-1.2.pdf"
+            "URL": "https://www.sodertalje.se/contentassets/2ea5d1ec529a4fb1ac8d1326e278f764/parkeringsstrategi-sodertalje-stadskarna_v-1.2.pdf",
+            "CoverImg":"https://i.ibb.co/hZ8CJJF/parkeringsstrategi-sodertalje-stadskarna-v-1-2.png"
         },
         {
             "Label": "PERSONUPPGIFTSPOLICY 2018-2020",
@@ -674,7 +691,8 @@
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/personuppgiftspolicy.pdf",
             "GlobalGoal": "MÅL 11",
-            "Projektledare": "Liselotte Löthagen"
+            "Projektledare": "Liselotte Löthagen",
+            "CoverImg": "https://i.ibb.co/7nvXC8n/personuppgiftspolicy.png"
         },
         {
             "Label": "POLLINERINGSPLAN 2020-2022",
@@ -695,7 +713,8 @@
             "URL": "https://www.sodertalje.se/contentassets/b98b0c067eb2487e871f6d8bd5ddf1a3/pollineringsplan-2020-2022.pdf",
             "Revision": "Kommunstyrselsen ansvarar för revidering vid behov",
             "GlobalGoal": "MÅL 11",
-            "Projektledare": "Liselotte Löthagen"
+            "Projektledare": "Liselotte Löthagen",
+            "CoverImg":"https://i.ibb.co/GC93nCr/pollineringsplan-2020-2022.png"
         },
         {
             "Label": "PROGRAM FÖR KONTROLL AV KOMMUNALVERKSAMHET SOM UTFÖRS AV PRIVATA UTFÖRARE",
@@ -712,7 +731,8 @@
             "SignificanceTelge": "NEJ",
             "Image": "https://img.icons8.com/ios/250/000000/checked.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/kontroll-privata-utforare-2016.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/kontroll-privata-utforare-2016.pdf",
+            "CoverImg": "https://i.ibb.co/nCQGSwL/kontroll-privata-utforare-2016.png"
         },
         {
             "Label": "REGLER OCH RIKTLINJER FÖR FÖRENINGSBIDRAG",
@@ -901,7 +921,8 @@
             "SignificanceTelge": "NEJ",
             "Image": "https://img.icons8.com/ios/250/000000/yacht.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/turistPROGRAMmet-2016-2022.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/turistPROGRAMmet-2016-2022.pdf",
+            "CoverImg":"https://i.ibb.co/RzZqpwt/turistprogrammet-2016-2022.png"
         },
         {
             "Label": "UTBYGGNADSSTRATEGI",
