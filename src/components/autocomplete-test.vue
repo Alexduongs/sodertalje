@@ -42,8 +42,8 @@
               height="150"
             />
           </div>
-          <div class="info">
-            <!--<span v-if="scope.suggestion.Globalgoals">
+          <!--<div class="info">
+            <span v-if="scope.suggestion.Globalgoals">
               {{ scope.suggestion.Globalgoals }}
             </span>
             <br />
@@ -57,7 +57,6 @@
               </span>
             </div>
           </div>
-        </div>
       </vue-suggest>
     </div>
   </div>
@@ -164,6 +163,7 @@ export default {
       background-color: #fff !important;
       border: solid 1px grey;
       padding: 10px;
+      text-align: center;
     
       &:hover {
         background-color: lightgrey !important;
