@@ -2,7 +2,7 @@
 
     "Elements": [
         {
-            "Title": "ARKITEKTURSTRATEGI",
+            "Label": "ARKITEKTURSTRATEGI",
             "Type": "Dokument",
             "Description": "Under framtagande",
             "Area": "SAMHÄLLSBYGGNAD",
@@ -18,7 +18,7 @@
             "KFGoal": "1.1 - Resultaten i förskolan, skolan och vuxenutbildningen ska förbättras"
         },
         {
-            "Title": "AVFALLSPLAN 2030",
+            "Label": "AVFALLSPLAN 2030",
             "Type": "Dokument",
             "Description": "Avfallsplanen är ett övergripande styrdokument och ska ligga till grund för ett aktivt åtgärdsarbete som ska inkluderas i hela kommunkoncernens arbete med att utveckla Södertälje. Ambitionen är att planen ska stimulera till hållbar resurshantering, begränsade utsläpp av växthusgaser och integrera ett inkluderande förhållningsätt. Hela Södertälje behöver vara en del i det omställningsarbete som ligger framför oss.",
             "Area": "SAMHÄLLSBYGGNAD",
@@ -40,7 +40,7 @@
             "CoverImg":"https://i.ibb.co/NZVfKjS/sbk-avfallsplan-2030-a4-webb.png"
         },
         {
-            "Title": "BIBLIOTEKSPLAN 2018-2021",
+            "Label": "BIBLIOTEKSPLAN 2018-2021",
             "Type": "Dokument",
             "Description": "Biblioteksplanen i Södertälje ska ange färdriktningen för samtliga kommunala bibliotek. Planen tar endast ytligt upp frågor som berör bibliotekens organisation och finansiering. De årliga mål och budgetprocesserna ska hantera utvecklingstakten av planen utifrån beslut om finansiering och prioriteringar givna av de ekonomiska förutsättningarna kommunen har.",
             "Area": "KULTUR & FRITID",
