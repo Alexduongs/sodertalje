@@ -35,21 +35,27 @@
           slot-scope="scope"
           @click.stop="goto(scope.suggestion.URL)"
         >
-          <div class="text">
-            <span v-html="boldenSuggestion(scope)">
-              {{ scope.suggestion.Label }}
-            </span>
+          <div class="img-container">
+            <img
+              v-bind:src="scope.suggestion.CoverImg"
+              width="110"
+              height="150"
+            />
           </div>
-          <br />
           <div class="info">
-            <img v-bind:src="scope.suggestion.Image" width="180" height="180" />
-            <span v-if="scope.suggestion.Globalgoals">
+            <!--<span v-if="scope.suggestion.Globalgoals">
               {{ scope.suggestion.Globalgoals }}
             </span>
             <br />
             <span v-if="scope.suggestion.Established">
               Skapat {{ scope.suggestion.Established }}
             </span>
+          </div>-->
+            <div class="text">
+              <span v-html="boldenSuggestion(scope)">
+                {{ scope.suggestion.Label }}
+              </span>
+            </div>
           </div>
         </div>
       </vue-suggest>
@@ -83,8 +89,8 @@ export default {
       );
 
       if (!query) return result;
-     
-     /*Show bold text*/
+
+      /*Show bold text*/
       const texts = query.split(/[\s-_/\\|.]/gm).filter((t) => !!t) || [""];
       return result.replace(
         new RegExp("(.*?)(" + texts.join("|") + ")(.*?)", "gi"),
@@ -127,6 +133,9 @@ export default {
 </script>
 
 <style lang="scss">
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -143,41 +152,44 @@ export default {
   }
   .vue-simple-suggest {
     .suggestions {
-      width: 900px;
+      width: 890px;
     }
     .suggest-item {
       position: relative;
       display: block;
       float: left;
-      margin: 6px;
-      width: 270px;
-      height: 300px;
+      margin: 10px;
+      width: 210px;
+      height: 220px;
       background-color: #fff !important;
       border: solid 1px grey;
-
+      padding: 10px;
+    
       &:hover {
         background-color: lightgrey !important;
       }
       .text {
-        display: inline-block;
-        line-height: 1;
-        vertical-align: text-bottom;
-        overflow: hidden;
-        max-width: 72%;
-        text-overflow: ellipsis;
+        display: block;
+        max-width: 180px;
         color: black;
-
-        span {
-          white-space: nowrap;
-        }
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        margin: 0 auto;
       }
       .info {
         color: black;
         position: absolute;
-        bottom: 0;
+      }
+
+      .img-container {
+        text-align: center;
+      }
+      img {
+        display: inline-block;
+        border: solid 1px lightgrey;
       }
     }
   }
 }
-
 </style>
