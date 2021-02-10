@@ -746,7 +746,8 @@
             "SignificanceTelge": "NEJ",
             "Image": "https://img.icons8.com/ios/250/000000/football2.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/sk_RIKTLINJER_foreningsbidrag_2018-webb.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/sk_RIKTLINJER_foreningsbidrag_2018-webb.pdf",
+            "CoverImg": "https://i.ibb.co/vhZJnp8/sk-RIKTLINJER-foreningsbidrag-2018-webb.png"
         },
         {
             "Label": "RIKTLINJER FÖR KOMMUNÖVERGRIPANDE STYRDOKUMENT",
@@ -766,7 +767,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/law.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/RIKTLINJER-kommunovergripande-styrdokument.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/RIKTLINJER-kommunovergripande-styrdokument.pdf",
+            "CoverImg": "https://i.ibb.co/qrHF5xC/RIKTLINJER-kommunovergripande-styrdokument.png"
         },
         {
             "Label": "RIKTLINJER FÖR MEDBORGARDIALOG",
@@ -782,7 +784,8 @@
             "SignificanceTelge": "NEJ",
             "Image": "https://img.icons8.com/ios/250/000000/chat.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/RIKTLINJER-for-medborgardialog.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/RIKTLINJER-for-medborgardialog.pdf",
+            "CoverImg": "https://i.ibb.co/QrBHPm0/RIKTLINJER-for-medborgardialog.png"
         },
         {
             "Label": "RIKTLINJER FÖR PLANBESKED",
@@ -815,7 +818,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/law.png",
             "Status": "Utgått",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/riktlinjer-styrdokument.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/riktlinjer-styrdokument.pdf",
+            "CoverImg": "https://i.ibb.co/ysTdYRM/riktlinjer-styrdokument.png"
         },
         {
             "Label": "SKOGSPOLICY",
@@ -835,7 +839,8 @@
             "Image": "https://img.icons8.com/ios/250/000000/nut.png",
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/skogspolicy-sodertalje-kommun.pdf",
-            "Revision": "Revideras vid behov"
+            "Revision": "Revideras vid behov",
+            "CoverImg": "https://i.ibb.co/tLwWjxQ/skogspolicy-sodertalje-kommun.png"
         },
         {
             "Label": "STADSMILJÖPROGRAM 2010",
@@ -846,7 +851,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/marker.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/stadsmiljoprogram_2010_lagupplost_webb2.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/stadsmiljoprogram_2010_lagupplost_webb2.pdf",
+            "CoverImg": "https://i.ibb.co/PmfCzWh/stadsmiljoprogram-2010-lagupplost-webb2.png"
         },
         {
             "Label": "STRATEGI BOENDE OCH BYGGANDE",
@@ -860,7 +866,8 @@
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/strategi-for-boende-och-byggande.pdf",
             "Revision": "Trafikbokslut sätts samman årligen",
             "GlobalGoal": "MÅL 11",
-            "Projektledare": "Mats Johannesson & Anders Eklind"
+            "Projektledare": "Mats Johannesson & Anders Eklind",
+            "CoverImg": "https://i.ibb.co/wLzKxHp/strategi-for-boende-och-byggande.png"
         },
         {
             "Label": "SÖDERTÄLJE STADSKÄRNA 2009-2029 - PROGRAM FÖR EN HÅLLBAR UTVECKLING",
@@ -874,7 +881,8 @@
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/sodertalje-stadskarna-2009-2029--program-for-en-hallbar-stadsutveckling.pdf",
             "Revision": "Revideras vid behov",
             "GlobalGoal": "MÅL 11",
-            "Projektledare": "Johan Filipsson"
+            "Projektledare": "Johan Filipsson",
+            "CoverImg": "https://i.ibb.co/SsJm3tj/sodertalje-stadskarna-2009-2029-program-for-en-hallbar-stadsutveckling.png"
         },
         {
             "Label": "TAXOR & AVGIFTER 2019",
@@ -888,7 +896,8 @@
             "SignificanceTelge": "NEJ",
             "Image": "https://img.icons8.com/ios/250/000000/combo-chart.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/kof/dokument/taxor-avgifter.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/kof/dokument/taxor-avgifter.pdf",
+            "CoverImg": "https://i.ibb.co/XJrq9fZ/taxor-avgifter.png"
         },
         {
             "Label": "TRAFIKSTRATEGI",
@@ -907,7 +916,8 @@
             "Image": "https://img.icons8.com/ios/250/000000/bicycle.png",
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/trafikstrategi.pdf",
-            "GlobalGoal": "MÅL 11"
+            "GlobalGoal": "MÅL 11",
+            "CoverImg": "https://i.ibb.co/L0nCR0R/trafikstrategi.png"
         },
         {
             "Label": "TURISTPROGRAMMET 2016-2022",
@@ -941,7 +951,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/sandbox2.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/utbyggnadsstrategi-190527.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/utbyggnadsstrategi-190527.pdf",
+            "CoverImg": "https://i.ibb.co/x5DvJyX/utbyggnadsstrategi-190527.png"
         },
         {
             "Label": "VA-PLAN",
@@ -952,7 +963,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/paint-bucket-with-label.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/va-plan-inkl-va-policy-2017-2030-jan2018.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/va-plan-inkl-va-policy-2017-2030-jan2018.pdf",
+            "CoverImg": "https://i.ibb.co/TwZPLCb/va-plan-inkl-va-policy-2017-2030-jan2018.png"
         },
         {
             "Label": "VATTENPLAN",
@@ -970,7 +982,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/paint-bucket-with-label.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/vattenplan-kf181105-huvuddokument-med-bilagor.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/vattenplan-kf181105-huvuddokument-med-bilagor.pdf",
+            "CoverImg": "https://i.ibb.co/LgKz7zW/vattenplan-kf181105-huvuddokument-med-bilagor.png"
         },
         {
             "Label": "ÖVERSIKTSPLAN 2013-2030",
@@ -989,7 +1002,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/full-moon.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/oversiktsplanen.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/oversiktsplanen.pdf",
+            "CoverImg": "https://i.ibb.co/26KpfHy/oversiktsplanen.png"
         },
         {
             "Label": "ÖVERSIKTSPLAN 2050",
