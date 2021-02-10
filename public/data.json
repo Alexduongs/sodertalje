@@ -36,7 +36,8 @@
             "Status": "Remiss",
             "URL": "https://www.sodertalje.se/globalassets/miljo-och-halsa/hall-sodertalje-rent/sbk-avfallsplan-2030-a4-webb.pdf",
             "Globalgoals": "MÅL 9",
-            "KFTargetArea": "2 Södertäljes medborgare och välfärd - Social Hållbarhet"
+            "KFTargetArea": "2 Södertäljes medborgare och välfärd - Social Hållbarhet",
+            "CoverImg":"https://i.ibb.co/NZVfKjS/sbk-avfallsplan-2030-a4-webb.png"
         },
         {
             "Title": "BIBLIOTEKSPLAN 2018-2021",
@@ -54,7 +55,8 @@
             "URL": "https://www.sodertalje.se/globalassets/kof/dokument/biblioteksplan-2018-2021.pdf",
             "Revision": "Revideras årligen",
             "GlobalGoal": "MÅL 9",
-            "KFTargetArea": "3 Attraktiva Södertälje"
+            "KFTargetArea": "3 Attraktiva Södertälje",
+            "CoverImg": "https://i.ibb.co/zPT6Ygy/biblioteksplan-2018-2021.png"
         },
         {
             "Label": "BOSTADSBYGGANDE PÅ LANDSBYGDEN",
@@ -72,7 +74,8 @@
             "URL": "https://www.sodertalje.se/globalassets/bo-och-bygga/planering/oversiktliga-studier/riktlinjer-for-byggande-pa-landsbygden/riktlinjer-for-bostadsbyggande-pa-landsbygden.pdf",
             "Revision": "Revideras årligen fram till 2022",
             "GlobalGoal": "MÅL 9",
-            "KFTargetArea": "4 Ekologiskt hållbara kommunen"
+            "KFTargetArea": "4 Ekologiskt hållbara kommunen",
+            "CoverImg":"https://i.ibb.co/4tR4g8h/riktlinjer-for-bostadsbyggande-pa-landsbygden.png"
         },
         {
             "Label": "BREDBANDSSTRATEGI",
@@ -89,7 +92,8 @@
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/bredbandsSTRATEGI.pdf",
             "GlobalGoal": "MÅL 9",
-            "KFTargetArea": "5 God ekonomi & effektiv organisatioin"
+            "KFTargetArea": "5 God ekonomi & effektiv organisatioin",
+            "CoverImg":"https://i.ibb.co/HD07QGL/bredbands-STRATEGI.png"
         },
         {
             "Label": "CYKELPLAN",
@@ -111,7 +115,8 @@
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/contentassets/11e42b7aa5244610beb34e016ff96054/cykelplan_2019.pdf",
             "GlobalGoal": "MÅL 10",
-            "KFTargetArea": "6 Attraktiv arbetsgivare"
+            "KFTargetArea": "6 Attraktiv arbetsgivare",
+            "CoverImg": "https://i.ibb.co/TrjbtvT/cykelplan-2019.png"
         },
         {
             "Label": "CYKELVÄGVISNINGSPLAN",
@@ -132,7 +137,8 @@
             "Status": "Utgått",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/cykelvagvisningsplan_sodertalje_september_2.pdf",
             "GlobalGoal": "MÅL 8",
-            "KFTargetArea": "1 Kunskapskommunen Södertälje"
+            "KFTargetArea": "1 Kunskapskommunen Södertälje",
+            "CoverImg": "https://i.ibb.co/3WLbs5D/cykelvagvisningsplan-sodertalje-september-2.png"
         },
         {
             "Label": "DIGITALISERINGSSTRATEGI 2019-2022",
@@ -154,7 +160,8 @@
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/digitaliseringsSTRATEGI.pdf",
             "Revision": "Årsredovisning",
             "GlobalGoal": "MÅL 3",
-            "KFTargetArea": "4 Ekologiskt hållbara kommunen"
+            "KFTargetArea": "4 Ekologiskt hållbara kommunen",
+            "CoverImg":"https://i.ibb.co/KL3KfBW/digitaliserings-STRATEGI.png"
         },
         {
             "Label": "FOLKHÄLSOPOLICY",
@@ -175,7 +182,8 @@
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/folkhalsopolicy.pdf",
             "Revision": "Gått ut",
             "GlobalGoal": "MÅL 3",
-            "KFTargetArea": "3 Attraktiva Södertälje"
+            "KFTargetArea": "3 Attraktiva Södertälje",
+            "CoverImg":"https://i.ibb.co/vJ7Y6DQ/folkhalsopolicy.png"
         },
         {
             "Label": "FOLKHÄLSOPROGRAM",
@@ -195,7 +203,8 @@
             "Status": "Revidering pågår",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/folkhalsoprogram.pdf",
             "Revision": "Revideras senast år 2022",
-            "GlobalGoal": "MÅL 3"
+            "GlobalGoal": "MÅL 3",
+            "CoverImg":"https://i.ibb.co/9VsQNSj/folkhalsoprogram.png"
         },
         {
             "Label": "FOLKHÄLSOSTRATEGI",
@@ -214,7 +223,8 @@
             "vilka dokument det nya styrdokumentet ersätter (dokumentnamn & Diarienummer)": "Folkhälsoprogram 2015–2018, dnr: KS 14/271 samt Folkhälsopolicy 2012–2018, dnr: KS 11/340 ",
             "Image": "https://img.icons8.com/ios/250/000000/hand-peace.png",
             "Status": "Under framtagande",
-            "GlobalGoal": "MÅL 17"
+            "GlobalGoal": "MÅL 17",
+            "CoverImg":"https://i.ibb.co/y6553B2/folkhalsostrategi-2021-2024.png"
         },
         {
             "Label": "GRÖNPLAN FÖR SÖDERTÄLJE TÄTORT",
@@ -233,7 +243,8 @@
             "Status": "Revidering pågår",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/gronplan-for-sodertalje-tatort-maj-2011_lagupplost1.pdf",
             "GlobalGoal": "MÅL 12",
-            "KFTargetArea": "4 Ekologiskt hållbara kommunen"
+            "KFTargetArea": "4 Ekologiskt hållbara kommunen",
+            "CoverImg":"https://i.ibb.co/0JPtQ6D/gronplan-for-sodertalje-tatort-maj-2011-lagupplost1.png"
         },
         {
             "Label": "GRÖNSTRATEGI",
@@ -260,7 +271,8 @@
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/handikappspolitiskt-program2.pdf",
             "GlobalGoal": "MÅL 14",
-            "KFTargetArea": "4 Ekologiskt hållbara kommunen"
+            "KFTargetArea": "4 Ekologiskt hållbara kommunen",
+            "CoverImg":"https://i.ibb.co/jTSDy1d/handikappspolitiskt-program2.png"
         },
         {
             "Label": "HANDLINGSPLAN FÖR ATT MOTVERKA FUSK & BEDRAGERI",
@@ -280,7 +292,8 @@
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/handlingsplan-motverka-fusk-och-bedrageri-ks-15-dec-2015-2.pdf",
             "GlobalGoal": "MÅL 15",
-            "KFTargetArea": "4 Ekologiskt hållbara kommunen"
+            "KFTargetArea": "4 Ekologiskt hållbara kommunen",
+            "CoverImg":"https://i.ibb.co/p1qPDhP/handlingsplan-motverka-fusk-och-bedrageri-ks-15-dec-2015-2.png"
         },
         {
             "Label": "HANDLINGSPLAN FÖR BREDBANDSSTRATEGI ",
@@ -299,7 +312,8 @@
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/handlingsplan-till-bredbandsstrategi.pdf",
             "GlobalGoal": "MÅL 16",
-            "KFTargetArea": "4 Ekologiskt hållbara kommunen"
+            "KFTargetArea": "4 Ekologiskt hållbara kommunen",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         },
         {
             "Label": "HANDLINGSPLAN FÖR DEMOKRATIUTVECKLING",
