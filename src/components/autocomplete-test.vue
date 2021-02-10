@@ -51,12 +51,12 @@
               Skapat {{ scope.suggestion.Established }}
             </span>
           </div>-->
-            <div class="text">
-              <span v-html="boldenSuggestion(scope)">
-                {{ scope.suggestion.Label }}
-              </span>
-            </div>
+          <div class="text">
+            <span v-html="boldenSuggestion(scope)">
+              {{ scope.suggestion.Label }}
+            </span>
           </div>
+        </div>
       </vue-suggest>
     </div>
   </div>
@@ -132,8 +132,7 @@ export default {
 </script>
 
 <style lang="scss">
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -163,8 +162,7 @@ export default {
       background-color: #fff !important;
       border: solid 1px grey;
       padding: 10px;
-      text-align: center;
-    
+
       &:hover {
         background-color: lightgrey !important;
       }
@@ -172,10 +170,13 @@ export default {
         display: block;
         max-width: 180px;
         color: black;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-size: 13px;
         font-weight: bold;
         margin: 0 auto;
+        align-self: center;
+        position: absolute;
+        bottom: 10px;
       }
       .info {
         color: black;
@@ -184,6 +185,7 @@ export default {
 
       .img-container {
         text-align: center;
+        margin-bottom: 10px;
       }
       img {
         display: inline-block;
