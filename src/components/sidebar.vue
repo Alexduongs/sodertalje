@@ -63,6 +63,7 @@ export default {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
+  left: 0;
 }
 .navicon {
   margin-bottom: 30%;

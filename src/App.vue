@@ -34,6 +34,8 @@ export default {
 body{
   padding: 0;
   margin: 0;
-  background-color:gainsboro;
+  background-color: #fbf7f5;
+  font-family: "Montserrat", sans-serif;
 }
+
 </style>
