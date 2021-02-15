@@ -1,5 +1,25 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+ <div>
+  <div class="search">
+    <h1>Söksida</h1>
+  </div> 
+    <sidebar />
+    <autocomplete />
+    </div>
 </template>
+
+<script>
+import Sidebar from "../components/sidebar.vue";
+import Autocomplete from "../components/autocomplete.vue";
+
+export default {
+  name: "Home",
+  data() {
+    return {};
+  },
+  components: {
+    Sidebar,
+    Autocomplete,
+  },
+};
+</script>
