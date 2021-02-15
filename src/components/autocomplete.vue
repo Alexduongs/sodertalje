@@ -12,7 +12,6 @@
         :nullable-select="true"
         :mode="mode"
         ref="suggestComponent"
-        placeholder="Sök..."
         @select="onSuggestSelect"
       >
         <!-- <input /> -->
@@ -21,7 +20,7 @@
             class="search__input"
             type="text"
             onfocus="this.value=''"
-            placeholder="Sök..."
+            placeholder="Sök på styrdokument, nyckelord, datum..."
           />
         </div>
         <!-- <output /> -->
@@ -51,18 +50,10 @@
               height="130"
             />
           </div>
-        <div
-            class="type"
-            :style="[
-              scope.suggestion.Status == 'Gällande'
-                ? { background: '#87BDC9' }
-                : scope.suggestion.Status == 'Remiss'
-                ? { background: '#E9A15F' }
-                : scope.suggestion.Status == 'Under framtagande'
-                ? { background: '#5F8C9A' }
-                : { background: '#C45941' },
-            ]"
-          > <span>{{ scope.suggestion.Documenttype }} </span></div><img class="quickview" src="/images/quickview.png">
+          <div class="type">
+            <span>{{ scope.suggestion.Documenttype }} </span>
+          </div>
+          <img class="quickview" src="/images/quickview.png" />
           <div
             class="title"
             :style="[
@@ -170,18 +161,17 @@ export default {
   color: #2c3e50;
   margin: 60px auto 0;
   width: 100%;
-  height: 792px;
   display: flex;
 
   .example {
-    width: 900px;
+    width: 922px;
   }
   .vue-simple-suggest {
     width: 100%;
     margin-left: 100px;
 
     .suggestions {
-      width: 890px;
+      width: 922px;
     }
     .suggest-item {
       position: relative;
@@ -198,37 +188,36 @@ export default {
       &:hover {
         background-color: #fff !important;
       }
-       .type {
+      .type {
         position: absolute;
         width: 50%;
-        height: 30px;
+        height: 25px;
+        background: #BEBDB9;
         color: #fff;
         font-family: "Montserrat", sans-serif;
         font-size: 10px;
         font-weight: bold;
-        //align-self: center;
         vertical-align: middle;
         border-radius: 0px 0px 10px 0px;
         top: 0;
       }
-         .type span {
+      .type span {
         display: inline-block;
         color: #fff;
         font-family: "Montserrat", sans-serif;
         font-size: 10px;
         font-weight: bold;
-        margin:  8px auto;
-
-       
+        margin: 5px auto;
       }
-       .quickview {
-          position: absolute;
-          display: flex;
-          width: 20px;
-          height: 20px;
-          top: 0px;
-          right: 0;
-           }
+      .quickview {
+        position: absolute;
+        display: flex;
+        width: 20px;
+        height: 20px;
+        top: -10px;
+        right: 10px;
+        border: none;
+      }
 
       .title {
         display: table-cell;
@@ -258,7 +247,6 @@ export default {
   }
 
   body {
-    width: 430px;
     margin: 0 auto;
     background-color: #f7cac9;
     font-family: "Montserrat", sans-serif;
@@ -271,11 +259,10 @@ export default {
     }
 
     &__input {
-      //width: 100%;
       padding: 12px 24px;
       background-color: transparent;
       transition: transform 250ms ease-in-out;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 18px;
       color: #575756;
       background-color: transparent;
@@ -289,8 +276,7 @@ export default {
 
       &::placeholder {
         color: color(#575756 a(0.8));
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
       }
 
       &:hover,
