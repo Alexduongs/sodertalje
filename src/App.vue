@@ -1,39 +1,32 @@
 <template>
   <div id="app">
-    <sidebar />
-      <autocomplete />
- <autocomplete-test />
-     <!-- <categories /> -->
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/search">Search</router-link>
+    </div>
+    <router-view/>
   </div>
 </template>
 
-<script>
-import Sidebar from './components/sidebar.vue'
-// import Categories from './components/categories.vue'
-import Autocomplete from './components/autocomplete.vue'
-import AutocompleteTest from './components/autocomplete-test.vue'
-
-export default {
-  name: 'App',
-  data () {
-    return {
-    }
-  },
-  components: {
-    Sidebar,
-    // Categories,
-    Autocomplete,
-     AutocompleteTest
-  }
-}
-</script>
-
 <style lang="scss">
-@import "_variables.scss";
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
 
-body{
-  padding: 0;
-  margin: 0;
-  background-color:gainsboro;
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>
