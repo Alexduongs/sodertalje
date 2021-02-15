@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router'
 //import { AutoCompletePlugin } from '@syncfusion/ej2-vue-dropdowns';
 //import { component } from 'vue/types/umd';
 
@@ -9,6 +10,7 @@ import App from './App.vue'
 
 
 new Vue({
-  render: h => h(App),
+  router,
+  render: h => h(App)
 }).$mount('#app')
 
