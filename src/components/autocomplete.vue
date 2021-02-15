@@ -51,9 +51,20 @@
               height="130"
             />
           </div>
-
+        <div
+            class="type"
+            :style="[
+              scope.suggestion.Status == 'Gällande'
+                ? { background: '#87BDC9' }
+                : scope.suggestion.Status == 'Remiss'
+                ? { background: '#E9A15F' }
+                : scope.suggestion.Status == 'Under framtagande'
+                ? { background: '#5F8C9A' }
+                : { background: '#C45941' },
+            ]"
+          > <span>{{ scope.suggestion.Documenttype }} </span></div><img class="quickview" src="/images/quickview.png">
           <div
-            class="text"
+            class="title"
             :style="[
               scope.suggestion.Status == 'Gällande'
                 ? { background: '#87BDC9' }
@@ -173,6 +184,7 @@ export default {
       width: 890px;
     }
     .suggest-item {
+      position: relative;
       display: table;
       float: left;
       margin: 10px;
@@ -186,7 +198,39 @@ export default {
       &:hover {
         background-color: #fff !important;
       }
-      .text {
+       .type {
+        position: absolute;
+        width: 50%;
+        height: 30px;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        //align-self: center;
+        vertical-align: middle;
+        border-radius: 0px 0px 10px 0px;
+        top: 0;
+      }
+         .type span {
+        display: inline-block;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        margin:  8px auto;
+
+       
+      }
+       .quickview {
+          position: absolute;
+          display: flex;
+          width: 20px;
+          height: 20px;
+          top: 0px;
+          right: 0;
+           }
+
+      .title {
         display: table-cell;
         width: 210px;
         height: 50px;
