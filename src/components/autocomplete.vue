@@ -81,6 +81,7 @@ import VueSuggest from "vue-simple-suggest/lib";
 import axios from "axios";
 
 export default {
+  
   components: {
     VueSuggest,
   },
@@ -99,9 +100,13 @@ export default {
 
       let result = this.$refs.suggestComponent.displayProperty(
         suggestion.Label
+        
       );
 
       if (!query) return result;
+      
+
+    
 
       /*Show bold text*/
       const texts = query.split(/[\s-_/\\|.]/gm).filter((t) => !!t) || [""];
@@ -109,14 +114,8 @@ export default {
         new RegExp("(.*?)(" + texts.join("|") + ")(.*?)", "gi"),
         "$1<b>$2</b>$3"
       );
+        
     },
-
-    setStatusColor(scope) {
-      if (scope.suggestion.Status == "Under framtagande") {
-        alert(scope.suggestion.style.backgroundColor);
-      }
-    },
-
     goto(url) {
       window.open(url, "_blank").focus();
     },
@@ -143,6 +142,7 @@ export default {
                 result[j] = el;
               });
             });
+          
             resolve(result);
           });
       });
@@ -164,7 +164,7 @@ export default {
   display: flex;
 
   .example {
-    width: 922px;
+    width: 920px;
   }
   .vue-simple-suggest {
     width: 100%;
