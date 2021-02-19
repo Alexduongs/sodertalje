@@ -1,4 +1,3 @@
-@@ -1,41 +1,32 @@
 <template>
   <div id="home">
     <div id="nav">
@@ -7,28 +6,49 @@
     </div>
     <sidebar />
     <autocomplete />
-    <router-view />
+        <button @click="getDataItem">Get Data</button>
+    <template v-for="item in jsonDataList"> 
+      <categories :item="item" :key="item"></categories>
+    </template>
   </div>
 </template>
 
 <script>
 import Sidebar from "../components/sidebar.vue";
 import Autocomplete from "../components/autocomplete.vue";
+import Categories from "../components/categories.vue";
 
 export default {
   name: "Home",
+
   data() {
-    return {};
+    return {
+      jsonDataList: [],
+    
+    }
+  },
+  methods: {
+    getDataItem() {
+      fetch("data.json")
+        .then((response) => response.json())
+        .then((data) => (this.jsonDataList = data.Elements))
+    },
   },
   components: {
     Sidebar,
     Autocomplete,
+    Categories,
   },
 };
 </script>
+<style>
+.small {
+  max-width: 600px;
+  margin: 150px auto;
+}
+</style>
 
 <style lang="scss">
-
 #nav {
   padding: 30px;
 
