@@ -6,8 +6,8 @@
     </div>
     <sidebar />
     <autocomplete />
-        <button @click="getDataItem">Get Data</button>
-    <template v-for="item in jsonDataList"> 
+
+    <template v-for="item in jsonDataList">
       <categories :item="item" :key="item"></categories>
     </template>
   </div>
@@ -20,19 +20,21 @@ import Categories from "../components/categories.vue";
 
 export default {
   name: "Home",
-
   data() {
     return {
       jsonDataList: [],
-    
-    }
+    };
   },
+
   methods: {
-    getDataItem() {
+    getDataItem: function() {
       fetch("data.json")
         .then((response) => response.json())
-        .then((data) => (this.jsonDataList = data.Elements))
+        .then((data) => (this.jsonDataList = data.Elements));
     },
+  },
+  beforeMount() {
+    this.getDataItem();
   },
   components: {
     Sidebar,
