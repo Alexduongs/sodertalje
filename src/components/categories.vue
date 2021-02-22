@@ -1,7 +1,9 @@
 <template>
-  <div class="categories">
-    <hr>Hi I'm a Foo component with the headline:
-    <h2>   {{ item.Label}} </h2>
+  <div @click="goToSearch()" class="categories" >
+    <router-link :to="{ name: 'Search', params: {Label:item.Label}}">
+        <h2>   {{ item.Label}} </h2>
+      </router-link>
+    
   </div>
 </template>
 
@@ -10,6 +12,11 @@ export default {
   name: "categories",
    props: {
    item: Object,
+  },
+  methods: {
+    goToSearch: function () {
+      this.$router.push('/search');
+    }
   },
 };
 
