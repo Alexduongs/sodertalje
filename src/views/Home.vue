@@ -8,7 +8,8 @@
     <autocomplete />
 
     <template v-for="item in jsonDataList">
-      <categories :item="item" :key="item"></categories>
+      <categories :item="item" :key="item" ></categories>
+    
     </template>
   </div>
 </template>
@@ -17,6 +18,7 @@
 import Sidebar from "../components/sidebar.vue";
 import Autocomplete from "../components/autocomplete.vue";
 import Categories from "../components/categories.vue";
+
 
 export default {
   name: "Home",
@@ -40,6 +42,7 @@ export default {
     Sidebar,
     Autocomplete,
     Categories,
+  
   },
 };
 </script>

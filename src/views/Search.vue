@@ -5,18 +5,24 @@
   </div> 
     <sidebar />
     <autocomplete />
+      <div class="search" >
+    <h2>   {{ this.$route.params.Label}} </h2>
+  </div>
     </div>
 </template>
+
 
 <script>
 import Sidebar from "../components/sidebar.vue";
 import Autocomplete from "../components/autocomplete.vue";
 
+
 export default {
-  name: "Home",
-  data() {
-    return {};
+  name: "Search",
+   props: {
+   item: Object,
   },
+
   components: {
     Sidebar,
     Autocomplete,
