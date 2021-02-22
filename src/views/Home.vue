@@ -25,6 +25,9 @@ export default {
       jsonDataList: [],
     }
   },
+  mounted() {
+   this.$store.dispatch('getDocuments');
+    },
 
   methods: {
     getDataItem: function() {
