@@ -8,43 +8,40 @@
     <autocomplete />
 
     <template v-for="item in jsonDataList">
-      <categories :item="item" :key="item" ></categories>
-    
+      <categories :item="item" :key="item"></categories>
     </template>
   </div>
 </template>
 
 <script>
-import Sidebar from "../components/sidebar.vue";
-import Autocomplete from "../components/autocomplete.vue";
-import Categories from "../components/categories.vue";
-
+import Sidebar from '../components/sidebar.vue'
+import Autocomplete from '../components/autocomplete.vue'
+import Categories from '../components/categories.vue'
 
 export default {
-  name: "Home",
+  name: 'Home',
   data() {
     return {
       jsonDataList: [],
-    };
+    }
   },
 
   methods: {
     getDataItem: function() {
-      fetch("data.json")
+      fetch('data.json')
         .then((response) => response.json())
-        .then((data) => (this.jsonDataList = data.Elements));
+        .then((data) => (this.jsonDataList = data.Elements))
     },
   },
   beforeMount() {
-    this.getDataItem();
+    this.getDataItem()
   },
   components: {
     Sidebar,
     Autocomplete,
     Categories,
-  
   },
-};
+}
 </script>
 <style>
 .small {
@@ -61,7 +58,7 @@ export default {
     padding: 0;
     margin: 0;
     background-color: #fbf7f5;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   a {
     font-weight: bold;
