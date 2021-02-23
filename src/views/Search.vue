@@ -1,37 +1,37 @@
 <template>
   <div>
-    <div class="search">
-      <h1>Söksida</h1>
+    <div class="search" v-if = "Element">
+      <h1>{{ Label }}{{ Thematic }}</h1>
+      {{ Year }}  
+      
     </div>
     <sidebar />
     <autocomplete />
-    <div class="search">
-      <h2>{{ this.$route.params.Label }}</h2>
-    </div>
   </div>
 </template>
+
 
 <script>
 import Sidebar from '../components/sidebar.vue'
 import Autocomplete from '../components/autocomplete.vue'
+//import { mapState, mapActions } from "vuex";
 
 export default {
-  name: 'Search',
-  props: {
-    item: Object,
+  props: ["Label","Type","Thematic"],
+  computed: {
+    Element() {
+      return this.$store.state.Element;
+    }
   },
-
-  components: {
+   mounted() {
+    this.$store.dispatch("getDocument");
+  },
+  /*methods: {
+    ...mapActions("item", ["getDocuments"]),
+  },*/
+   components: {
     Sidebar,
     Autocomplete,
   },
-  computed: {
-    labels() {
-      return this.$store.state.labels
-    },
-  },
-  mounted() {
-    this.$store.dispatch('getJsonData')
-  },
-}
+};
 </script>
