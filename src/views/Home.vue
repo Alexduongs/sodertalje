@@ -1,12 +1,7 @@
 <template>
   <div id="home">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/search">Search</router-link>
-    </div>
     <sidebar />
     <autocomplete />
-
     <template v-for="item in jsonDataList">
       <categories :item="item" :key="item"></categories>
     </template>
@@ -26,8 +21,8 @@ export default {
     }
   },
   mounted() {
-   this.$store.dispatch('getDocuments');
-    },
+    this.$store.dispatch('getDocuments')
+  },
 
   methods: {
     getDataItem: function() {
