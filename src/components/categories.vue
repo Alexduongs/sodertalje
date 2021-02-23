@@ -1,25 +1,23 @@
 <template>
-  <div @click="goToSearch()" class="categories" >
-    <router-link :to="{ name: 'Search', params: {Label:item.Label}}">
-        <h2>   {{ item.Label}} </h2>
-      </router-link>
-    
+  <div @click="goToSearch()" class="categories">
+    <router-link :to="{name: 'Search', params: {Label: item.Label}}">
+      <h2>{{ item.Thematic }}</h2>
+    </router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: "categories",
-   props: {
-   item: Object,
+  name: 'categories',
+  props: {
+    item: Object,
   },
   methods: {
-    goToSearch: function () {
-      this.$router.push('/search');
-    }
+    goToSearch: function() {
+      this.$router.push('/search')
+    },
   },
-};
-
+}
 </script>
 
 <style lang="scss" scoped>

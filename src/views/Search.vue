@@ -1,8 +1,5 @@
 <template>
   <div>
-    <div class="search">
-      <h1>Söksida</h1>
-    </div>
     <sidebar />
     <autocomplete />
     <div class="search">
@@ -31,7 +28,17 @@ export default {
     },
   },
   mounted() {
-    this.$store.dispatch('getJsonData')
+    this.$store.dispatch('getDocuments')
+  },
+  beforeMount() {
+    this.getDataItem()
   },
 }
 </script>
+
+<style scoped>
+body {
+  margin: 0;
+  padding: 0;
+}
+</style>
