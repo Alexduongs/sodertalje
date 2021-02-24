@@ -54,13 +54,13 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 .navbarside {
-  background-color: white;
+  background-color: #ebf9f2;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 300px;
   position: absolute;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $fontType;
   margin: 0;
   padding: 0;
   left: 0;
@@ -75,7 +75,7 @@ export default {
   box-shadow: 0px 1px 2px 1px rgb(205, 203, 203);
 }
 .nametitle {
-  color: black;
+  color: $black;
   text-align: right;
   margin-bottom: 53px;
 }
@@ -116,13 +116,13 @@ export default {
 }
 .menu-left-six {
   width: 85px;
-  color: black;
+  color: $black;
   text-align: center;
 }
 
 li:hover {
-  background-color: rgb(72, 191, 145);
-  color: black;
+  background-color: white;
+  color: $black;
   transition: 0.6s;
 }
 
