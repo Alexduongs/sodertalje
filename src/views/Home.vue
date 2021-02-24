@@ -41,30 +41,11 @@ export default {
   },
 }
 </script>
-<style>
+<style lang="scss">
+@import './src/_variables.scss';
+
 .small {
   max-width: 600px;
   margin: 150px auto;
-}
-</style>
-
-<style lang="scss">
-#nav {
-  padding: 30px;
-
-  body {
-    padding: 0;
-    margin: 0;
-    background-color: #fbf7f5;
-    font-family: 'Montserrat', sans-serif;
-  }
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>
