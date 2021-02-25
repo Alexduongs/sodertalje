@@ -12,7 +12,13 @@
       :key="item.Label"
       :item="item"
     ></categories>
-  </div>
+    
+   <div v-for="item in infoOne" :key="item.Label" :item="item">
+     <div v-if='item.Thematic === "DIGITALISERING"'>
+     {{item.Thematic}}
+     </div>
+     </div>
+</div>
 </template>
 
 <script>
@@ -31,6 +37,9 @@ export default {
     Elements() {
       return this.$store.state.Elements;
     },
+     infoOne: function () {
+    return this.$store.state.Elements.filter(i => i.Thematic === i.Thematic)
+  },
   },
   mounted() {
     this.$store.dispatch("getDocuments");

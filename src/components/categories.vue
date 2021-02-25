@@ -1,7 +1,7 @@
 <template>
   <div class="categories">
     <router-link :to="{ name: 'Search', params: { Thematic: item.Thematic, Type: item.Type  } }">
-     Digi
+   
     </router-link>
  
 </div>
