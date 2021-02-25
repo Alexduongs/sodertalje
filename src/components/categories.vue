@@ -1,31 +1,31 @@
 <template>
-
   <div class="categories">
-    <router-link :to="{ name: 'Search', params: { Thematic: item.Label, Type: item.Type  } }">
-     Digi
-    </router-link>
- 
+     <h2>Sök på kategori</h2>
+   <div v-for="(Thematic, index) in ThematicList" :key="index">
+  <router-link :to="{name: 'Search', params: {Thematic: Thematic }}">
+  <h3>{{ Thematic }}</h3>
+  </router-link>  
+</div>
 </div>
 </template>
 
 <script>
 export default {
-
   props: ["item"],
 
-  /*methods: {
-    goToSearch: function() {
-      this.$router.push("/search");
+  computed: {
+    Elements() {
+      return this.$store.state.Elements;
     },
-  }
-  /*mounted() {
-    this.$store.dispatch("getDocuments", this.Label);
+     ThematicList () {
+        const ThematicList = new Set();
+        this.$store.state.Elements.forEach(item => ThematicList.add(item.Thematic));
+        return Array.from(ThematicList); 
+    }, 
   },
-   computed: {
-    Elements () {
-      return this.$store.state.Elements
-    }
-    },*/
+  mounted() {
+    this.$store.dispatch("getDocuments");
+  },
 };
 
 </script>

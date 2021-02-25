@@ -1,12 +1,8 @@
 <template>
   <div>
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
     <sidebar />
     <autocomplete />
-    <div v-for="item in infoOne" :key="item.Label" :item="item">
+    <div v-for="item in itemInfo" :key="item.Label" :item="item">
       <div v-if="item.Thematic === Thematic">
         <div class="section">
           <h5 class="titel">{{ item.Label }}</h5>
@@ -29,14 +25,13 @@ import Autocomplete from "../components/autocomplete.vue";
 
 export default {
   props: ["Label", "Type", "Thematic"],
-
   components: {
     Sidebar,
     Autocomplete,
     //Categories,
   },
   computed: {
-    infoOne: function() {
+    itemInfo: function() {
       return this.$store.state.Elements.filter(
         (i) => i.Thematic === i.Thematic
       );
@@ -47,20 +42,16 @@ export default {
       window.open(url, "_blank").focus();
     },
   },
-
 };
-
 </script>
-<<<<<<< Updated upstream
 
-<style scoped>
-body {
-  margin: 0;
-  padding: 0;
-=======
 <style lang="scss" scoped>
 @import "./src/_variables.scss";
 
+body {
+  margin: 0;
+  padding: 0;
+}
 .section {
   display: block;
 }
@@ -81,6 +72,5 @@ body {
   padding: 10px;
   border-radius: 5px;
   width: 20%;
->>>>>>> Stashed changes
 }
 </style>
