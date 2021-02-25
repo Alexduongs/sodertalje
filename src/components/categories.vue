@@ -1,4 +1,5 @@
 <template>
+
   <div class="categories">
     <router-link :to="{ name: 'Search', params: { Thematic: item.Thematic, Type: item.Type  } }">
    
@@ -9,6 +10,7 @@
 
 <script>
 export default {
+
   props: ["item"],
 
   /*methods: {
@@ -25,6 +27,7 @@ export default {
     }
     },*/
 };
+
 </script>
 
 <style lang="scss" scoped>

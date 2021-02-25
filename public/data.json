@@ -15,7 +15,8 @@
             "Status": "Under framtagande",
             "Globalgoals": "MÅL 10",
             "KFTargetArea": "1 Kunskapskommunen Södertälje",
-            "KFGoal": "1.1 - Resultaten i förskolan, skolan och vuxenutbildningen ska förbättras"
+            "KFGoal": "1.1 - Resultaten i förskolan, skolan och vuxenutbildningen ska förbättras",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         },
         {
             "Label": "AVFALLSPLAN 2030",
@@ -259,7 +260,8 @@
             "Image": "https://img.icons8.com/ios/250/000000/nut.png",
             "Status": "Under framtagande",
             "GlobalGoal": "MÅL 13",
-            "KFTargetArea": "4 Ekologiskt hållbara kommunen"
+            "KFTargetArea": "4 Ekologiskt hållbara kommunen",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         },
         {
             "Label": "HANDIKAPPSPOLITISKT PROGRAM",
@@ -333,7 +335,8 @@
             "Image": "https://img.icons8.com/ios/250/000000/podium-with-speaker.png",
             "Status": "Remiss",
             "GlobalGoal": "MÅL 17",
-            "KFTargetArea": "5 God ekonomi & effektiv organisatioin"
+            "KFTargetArea": "5 God ekonomi & effektiv organisatioin",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         },
         {
             "Label": "HANDLINGSPLAN FÖR FOLKBIBLIOTEKENS STRUKTURUTVECKLING",
@@ -393,7 +396,8 @@
             "Image": "https://img.icons8.com/ios/250/000000/circled-up-right-2.png",
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/HANDLINGSPLAN-ks-20160401.pdf",
-            "KFTargetArea": "3 Attraktiva Södertälje"
+            "KFTargetArea": "3 Attraktiva Södertälje",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         },
         {
             "Label": "INFORMATIONSSÄKERHETSPOLICY",
@@ -470,7 +474,8 @@
             "SignificanceTelge": "NEJ",
             "Image": "https://img.icons8.com/ios/250/000000/thanksgiving.png",
             "Status": "Utgått",
-            "URL": "https://www.sodertalje.se/kommun-och-politik/styrande-dokument/~/link/0f922008cf4c42a79a6fd8d9004c537d.aspx"
+            "URL": "https://www.sodertalje.se/kommun-och-politik/styrande-dokument/~/link/0f922008cf4c42a79a6fd8d9004c537d.aspx",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         },
         {
             "Label": "KRETSLOPPSPOLICY FÖR ENSKILDA AVLOPP I SÖDERTÄLJE KOMMUN",
@@ -485,7 +490,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/synchronize.png",
             "Status": "Gällande",
-            "URL": "https://www.sodertalje.se/globalassets/miljo-och-halsa/hallbara-sodertalje/pm_tjut_kretsloppspolicy_20100406_0430n.pdf"
+            "URL": "https://www.sodertalje.se/globalassets/miljo-och-halsa/hallbara-sodertalje/pm_tjut_kretsloppspolicy_20100406_0430n.pdf",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         },
         {
             "Label": "KRISPLAN 2015-2018",
@@ -509,10 +515,11 @@
             "Office": "Samhällsbyggnadskontoret ",
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/picture.png",
-            "Status": "Under framtagande"
+            "Status": "Under framtagande",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         },
         {
-            "Label": "LIVSMEDELSFÖRSÖRJNINGSSTRATEGI",
+            "Label": "LIVSMEDELSFÖRSÖRJNING STRATEGI",
             "Type": "Dokument",
             "Description": "Under framtagande",
             "Thematic": "MILJÖ & KLIMAT",
@@ -520,7 +527,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/swiss-army-knife.png",
             "Status": "Under framtagande",
-            "GlobalGoal": "MÅL 17"
+            "GlobalGoal": "MÅL 17",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         },
         {
             "Label": "MARKANVISNINGSPOLICY 2018",
@@ -536,7 +544,8 @@
             "Image": "https://img.icons8.com/ios/250/000000/surface.png",
             "Status": "Gällande",
             "URL": "https://www.sodertalje.se/contentassets/f8b4f313964c49328372f934c2a848f1/markanvisningspolicy-2018.pdf",
-            "Projektledare": "Sofi Cyréus"
+            "Projektledare": "Sofi Cyréus",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         },
         {
             "Label": "MILJÖBOKSLUT 2019",
@@ -583,7 +592,8 @@
             "URL": "https://www.sodertalje.se/globalassets/styrande-dokument/turistprogrammet-2016-2022.pdf",
             "Revision": "Vid behov",
             "GlobalGoal": "MÅL 11",
-            "Projektledare": "Maria Wikenståhl"
+            "Projektledare": "Maria Wikenståhl",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         },
         {
             "Label": "MÅL OCH RIKTLINJER FÖR KOMMUNENS MINORITETSPOLITISKA ARBETE",
@@ -799,7 +809,8 @@
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/todo-list.png",
             "Status": "Under framtagande",
-            "GlobalGoal": "MÅL 11"
+            "GlobalGoal": "MÅL 11",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         },
         {
             "Label": "RIKTLINJER FÖR STYRDOKUMENT I SÖDERTÄLJE KOMMUN",
@@ -1020,7 +1031,8 @@
             "vilka dokument det nya styrdokumentet ersätter (dokumentnamn & Diarienummer)": "ÖVERSIKTSPLAN 2013-2030",
             "SignificanceTelge": "JA",
             "Image": "https://img.icons8.com/ios/250/000000/full-moon.png",
-            "Status": "Under framtagande"
+            "Status": "Under framtagande",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         },
         {
             "Label": "LIVSMEDELS- OCH MÅLTIDSPOLICY",
@@ -1038,7 +1050,8 @@
             "vilka dokument det nya styrdokumentet ersätter (dokumentnamn & Diarienummer)": "Kostpolicy",
             "SignificanceTelge": "JA",
             "Status": "Gällande",
-            "KFTargetArea": "2 Södertäljes medborgare och välfärd - Social Hållbarhet"
+            "KFTargetArea": "2 Södertäljes medborgare och välfärd - Social Hållbarhet",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         },
         {
             "Label": "KRISPLAN 2020-2022",
@@ -1051,7 +1064,8 @@
             "Committee": "Kommunstyrelsen",
             "Department": "Säkerhetsavdelningen",
             "Office": "Kommunstyrelsenskontor",
-            "vilka dokument det nya styrdokumentet ersätter (dokumentnamn & Diarienummer)": "Krisplan 2015-2018"
+            "vilka dokument det nya styrdokumentet ersätter (dokumentnamn & Diarienummer)": "Krisplan 2015-2018",
+            "CoverImg":"https://i.ibb.co/12X2DQ2/handlingsplan-till-bredbandsstrategi.png"
         }
     ]
 }

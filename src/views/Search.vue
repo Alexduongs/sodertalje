@@ -1,10 +1,6 @@
 <template>
   <div>
-    <div class="search" v-if = "Element">
-      <h1>{{ Label }}{{ Thematic }}</h1>
-      {{ Year }}  
-      
-    </div>
+
     <sidebar />
     <autocomplete />
   </div>
@@ -33,5 +29,14 @@ export default {
     Sidebar,
     Autocomplete,
   },
+
 };
+
 </script>
+
+<style scoped>
+body {
+  margin: 0;
+  padding: 0;
+}
+</style>
