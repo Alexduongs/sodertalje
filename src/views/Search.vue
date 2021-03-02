@@ -2,6 +2,7 @@
   <div>
     <sidebar />
     <autocomplete />
+    <FilterBar :filterData="Elements"/>
     <doclist :doclist="doclist" />
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import Sidebar from "../components/sidebar.vue";
 import Autocomplete from "../components/autocomplete.vue";
+import FilterBar from "../components/filterBar.vue";
 import Doclist from "../components/doclist.vue";
 
 export default {
@@ -20,6 +22,7 @@ export default {
   components: {
     Sidebar,
     Autocomplete,
+    FilterBar,
     Doclist,
   },
   computed: {
@@ -41,6 +44,9 @@ export default {
         (i) => i.Thematic === i.Thematic
       );
     },
+    // filterData() {
+
+    // },
   },
 };
 </script>
