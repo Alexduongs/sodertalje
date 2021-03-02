@@ -1,37 +1,42 @@
 <template>
-  <div>
-    <sidebar />
-    <autocomplete />
-    <doclist :doclist="doclist" />
+  <div class="section">
+    <div class="hej" v-for="item in doclist" :key="item.Label" :item="item">
+      <div v-if="item.Thematic === Thematic">
+        <div class="section">
+          <div class="img-container">
+            <img v-bind:src="item.CoverImg" width="100" height="130" />
+          </div>
+          <div
+            class="title"
+            :style="[
+              item.Status == 'Gällande'
+                ? {background: '#87BDC9'}
+                : item.Status == 'Remiss'
+                ? {background: '#E9A15F'}
+                : item.Status == 'Under framtagande'
+                ? {background: '#5F8C9A'}
+                : {background: '#C45941'},
+            ]"
+          >
+            <span class="labelTitle">
+              {{ item.Label }}
+            </span>
+            <div class="type">
+              <span>{{ item.Documenttype }} </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import Sidebar from '../components/sidebar.vue'
-import Autocomplete from '../components/autocomplete.vue'
-import Doclist from '../components/doclist.vue'
-
 export default {
-  // data() {
-  //   return {
-  //     doclist: [],
-  //   }
-  // },
-  components: {
-    Sidebar,
-    Autocomplete,
-    Doclist,
-  },
-  computed: {
-    doclist: function() {
-      return this.$store.state.Elements.filter((i) => i.Thematic === i.Thematic)
-    },
-  },
-  methods: {
-    goto(url) {
-      window.open(url, '_blank').focus()
-    },
-  },
+  props: ['doclist'],
+  components: {},
+  computed: {},
+  methods: {},
 }
 </script>
 

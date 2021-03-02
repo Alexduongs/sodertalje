@@ -154,7 +154,7 @@ export default {
   }
   .vue-simple-suggest {
     width: $responsivewidth;
-    margin-left: 20%;
+    margin-left: 17%;
 
     .suggestions {
       width: $responsivewidth;
@@ -240,8 +240,8 @@ export default {
 
   .search {
     &__container {
-      padding-top: 15vh;
-      width: 100%;
+      padding-top: 10vh;
+      width: $responsivewidth;
     }
 
     &__input {

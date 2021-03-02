@@ -10,7 +10,6 @@
 
 <script>
 export default {
-  props: ['item'],
 
   computed: {
     Elements() {
