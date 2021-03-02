@@ -18,11 +18,6 @@
 export default {
     props: ["filterData"],
 
-    data: {
-      ThematicList: new Set()
-  },
-  
-
     methods: {
 
     },
@@ -32,8 +27,9 @@ export default {
     },
 
     mounted() {
-      this.filterCategory = this.filterData.forEach((item) => filterCategory.add(item.Label))
-      return Array.from(this.filterCategory)
+    const filterCategory = new Set()
+      this.filterData.forEach((item) => filterCategory.add(item.Label))
+      return Array.from(filterCategory)
     }
 }
 </script>
