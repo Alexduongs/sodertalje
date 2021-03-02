@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div class="hej" v-for="item in doclist" :key="item.Label" :item="item">
-      <div v-if="item.Thematic === Thematic">
+     <div v-if="item.Thematic === $route.params.Thematic"> 
         <div class="section">
           <div class="img-container">
             <img v-bind:src="item.CoverImg" width="100" height="130" />
@@ -28,16 +28,19 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
+  
+  
 </template>
 
 <script>
 export default {
-  props: ['doclist'],
+   props: ["doclist"],
   components: {},
   computed: {},
   methods: {},
 }
+  
 </script>
 
 <style lang="scss" scoped>

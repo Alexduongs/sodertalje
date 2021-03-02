@@ -7,36 +7,46 @@
 </template>
 
 <script>
-import Sidebar from '../components/sidebar.vue'
-import Autocomplete from '../components/autocomplete.vue'
-import Doclist from '../components/doclist.vue'
+import Sidebar from "../components/sidebar.vue";
+import Autocomplete from "../components/autocomplete.vue";
+import Doclist from "../components/doclist.vue";
 
 export default {
-  // data() {
-  //   return {
-  //     doclist: [],
-  //   }
-  // },
+  data() {
+    return {
+      doclist: [],
+    };
+  },
   components: {
     Sidebar,
     Autocomplete,
     Doclist,
   },
   computed: {
-    doclist: function() {
-      return this.$store.state.Elements.filter((i) => i.Thematic === i.Thematic)
+    Elements() {
+      return this.$store.state.Elements;
     },
   },
+  mounted() {
+    this.$store.dispatch("getDocuments");
+     this.filteredList();
+  },
+  
   methods: {
     goto(url) {
-      window.open(url, '_blank').focus()
+      window.open(url, "_blank").focus();
+    },
+    filteredList() {
+      this.doclist = this.$store.state.Elements.filter(
+        (i) => i.Thematic === i.Thematic
+      );
     },
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import './src/_variables.scss';
+@import "./src/_variables.scss";
 
 body {
   margin: 0;
