@@ -1,9 +1,7 @@
 <template>
     <div>
-        <div class="filterBar" v-for="item in filterCategory" :key="item">
-            <h1>Filter</h1>
+        <div class="filterBar" v-for="item in filterData" :key="item">
             <div>
-                <h1 class="banan">Banan</h1>
                 <div class="filter-category">
                     <h3> {{item.Label}} </h3>
                     <span class="toggle">+</span>
@@ -17,25 +15,26 @@
 
 <script>
 export default {
-    props: ["filterData"],
+    props: ["Elements"],
 
-    
+    data() {
+        return {
+            filterData: "Elements"
+        }
+    },
+
 
     methods: {
-
     },
 
     computed: {
-
+        
     },
 
     mounted() {
-        console.log(this.filterData, 'filterData')
-        const filterCategory = new Set()
-        this.filterData.forEach((item) => filterCategory.add(item))
-        console.log(filterCategory, 'filterCategory banan')
-        return Array.from(filterCategory)
-        //return filterCategory;
+        const filterData = new Set()
+        this.Elements.forEach((item) => filterData.add(item))
+        this.filterData = filterData    
     }
 }
 </script>
@@ -47,7 +46,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        //margin-left: 50%;
+        margin-left: 50%;
         padding: 20px;
         text-align: left;
         width: 400px;     
