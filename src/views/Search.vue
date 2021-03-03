@@ -2,7 +2,7 @@
   <div>
     <sidebar />
     <autocomplete />
-    <FilterBar :filterData="Elements"/>
+    <FilterBar :filterData="Elements" />
     <doclist :doclist="doclist" />
   </div>
 </template>
