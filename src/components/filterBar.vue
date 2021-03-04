@@ -1,11 +1,17 @@
 <template>
     <div>
-        <div class="filterBar" v-for="item in filterData" :key="item">
+        <h1>{{ banan }}</h1>
+        <div class="filterBar" >
             <div>
                 <div class="filter-category">
-                    <h3> {{item.Label}} </h3>
+                    <h3> Tematiskt område </h3>
                     <span class="toggle">+</span>
-                    <input type="checkbox" name="" id="">
+                    <div v-for="item in getThematic" :key="item">
+                        <div>
+                            <p>{{ item }}</p>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                    </div>
                 </div>
                 <hr>
             </div>
@@ -19,7 +25,8 @@ export default {
 
     data() {
         return {
-            filterData: "Elements"
+            filterData: "Elements",
+            thematicLabel: []
         }
     },
 
@@ -28,13 +35,24 @@ export default {
     },
 
     computed: {
-        
+       getThematic() {
+            const thematicLabel = new Set()
+            this.filterData.forEach((item) => thematicLabel.add(item.Thematic))
+            console.log(thematicLabel, 'thematicLabel')
+            return thematicLabel
+        },
+
+        banan() {
+            return 'hello'
+        }
     },
 
     mounted() {
         const filterData = new Set()
         this.Elements.forEach((item) => filterData.add(item))
-        this.filterData = filterData    
+        this.filterData = filterData 
+        
+        this.getThematic( )
     }
 }
 </script>

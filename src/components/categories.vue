@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper">
+    <h1>{{ banan }}</h1>
     <div class="categories" v-for="(Thematic, index) in ThematicList" :key="index">
       <router-link class="link" :to="{name: 'Search', params: {Thematic: Thematic}}">
         <p class="each">{{ Thematic }}</p>
@@ -20,6 +21,10 @@ export default {
       this.$store.state.Elements.forEach((item) => ThematicList.add(item.Thematic))
       return Array.from(ThematicList)
     },
+
+    banan() {
+      return 'hello'
+    }
   },
   mounted() {
     this.$store.dispatch('getDocuments')
