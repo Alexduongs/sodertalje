@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>{{ banan }}</h1>
+        <h1>banan </h1>
         <div class="filterBar" >
             <div>
                 <div class="filter-category">
@@ -25,7 +25,7 @@ export default {
 
     data() {
         return {
-            filterData: "Elements",
+            filterData: [],
             thematicLabel: []
         }
     },
@@ -50,9 +50,8 @@ export default {
     mounted() {
         const filterData = new Set()
         this.Elements.forEach((item) => filterData.add(item))
+        console.log(this.Elements)
         this.filterData = filterData 
-        
-        this.getThematic( )
     }
 }
 </script>
