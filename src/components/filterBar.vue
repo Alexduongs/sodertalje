@@ -1,16 +1,31 @@
 <template>
     <div>
-        <h1>{{ banan }}</h1>
+        <h1></h1>
         <div class="filterBar" >
             <div>
                 <div class="filter-category">
                     <h3> Tematiskt område </h3>
-                    <span class="toggle">+</span>
-                    <div v-for="item in getThematic" :key="item">
+                   
+                    <button class="toggle" v-on:click="isActive = !isActive">+</button>
+                     <div class="filter" v-if="isActive">
+                    <div v-for="Thematic in filterThematic" :key="Thematic">
                         <div>
-                            <p>{{ item }}</p>
+                            <p>{{ Thematic}}</p>
                             <input type="checkbox" name="" id="">
                         </div>
+                    </div>
+                    </div>
+                </div>
+                   <div class="filter-category">
+                    <h3> Dokumenttyp </h3>
+                      <span class="toggle" v-on:click="this.isActive = !this.isActive">+</span>
+                       <div class="filter" v-if="this.isActive">
+                    <div v-for="(Documenttype) in filterDocumenttype" :key="Documenttype">
+                         <div class="filter">
+                            <p>{{ Documenttype }}</p>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                         </div>
                     </div>
                 </div>
                 <hr>
@@ -23,37 +38,33 @@
 export default {
     props: ["Elements"],
 
-    data() {
-        return {
-            filterData: "Elements",
-            thematicLabel: []
-        }
-    },
-
+     data() {
+         return {
+    isActive: false
+     }
+  },
 
     methods: {
-    },
+
+      },
 
     computed: {
-       getThematic() {
-            const thematicLabel = new Set()
-            this.filterData.forEach((item) => thematicLabel.add(item.Thematic))
-            console.log(thematicLabel, 'thematicLabel')
-            return thematicLabel
-        },
-
-        banan() {
+  
+    filterThematic() {     
+      const filterThematic = new Set() 
+      this.$store.state.Elements.forEach((item) =>  filterThematic.add(item.Thematic))
+      return Array.from(filterThematic)
+    },
+     filterDocumenttype() {     
+      const filterDocumenttype = new Set() 
+      this.$store.state.Elements.forEach((item) =>  filterDocumenttype.add(item.Documenttype))
+      return Array.from(filterDocumenttype)
+    },
+           
+        banan() {      
             return 'hello'
         }
     },
-
-    mounted() {
-        const filterData = new Set()
-        this.Elements.forEach((item) => filterData.add(item))
-        this.filterData = filterData 
-        
-        this.getThematic( )
-    }
 }
 </script>
 
