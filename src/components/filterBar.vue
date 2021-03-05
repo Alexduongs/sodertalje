@@ -25,7 +25,7 @@ export default {
 
     data() {
         return {
-            filterData: [],
+            //filterData: [],
             thematicLabel: []
         }
     },
@@ -37,7 +37,7 @@ export default {
     computed: {
        getThematic() {
             const thematicLabel = new Set()
-            this.filterData.forEach((item) => thematicLabel.add(item.Thematic))
+            this.Elements.forEach((item) => thematicLabel.add(item.Thematic))
             console.log(thematicLabel, 'thematicLabel')
             return thematicLabel
         },
@@ -47,12 +47,12 @@ export default {
         }
     },
 
-    mounted() {
-        const filterData = new Set()
-        this.Elements.forEach((item) => filterData.add(item))
-        console.log(this.Elements)
-        this.filterData = filterData 
-    }
+    // mounted() {
+    //     const filterData = new Set()
+    //     this.Elements.forEach((item) => filterData.add(item))
+    //     console.log(this.Elements)
+    //     this.filterData = filterData 
+    // }
 }
 </script>
 
