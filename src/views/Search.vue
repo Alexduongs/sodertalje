@@ -4,6 +4,7 @@
     <autocomplete />
     <FilterBar :Elements="Elements" />
     <doclist :doclist="doclist" />
+    <p>{{ $route.params.Thematic }}</p>
   </div>
 </template>
 
@@ -27,12 +28,13 @@ export default {
   },
   computed: {
     Elements() {
-      return this.$store.state.Elements;
+      return this.$store.state.Elements
+      
     },
   },
   mounted() {
-    this.$store.dispatch("getDocuments");
-     this.filteredList();
+    this.$store.dispatch("getDocuments"); //Verkar inte behövas????
+    this.filteredList();
   },
   
   methods: {
@@ -40,9 +42,20 @@ export default {
       window.open(url, "_blank").focus();
     },
     filteredList() {
-      this.doclist = this.$store.state.Elements.filter(
-        (i) => i.Thematic === i.Thematic
-      );
+      if (this.$route.params.Thematic) {
+        this.doclist = this.Elements.filter((i) => {
+          return i.Thematic === i.Thematic
+        })
+      } else {
+        console.log(this.Elements[1], 'this.$store.state.Elements')
+        console.log(this.Elements.map((i) => i.Thematic), 'this.Elements')
+      
+        // this.doclist = this.Elements.map((i) => {
+        //   console.log('hej2')
+        //   console.log(i.Thematic, 'i.Thematic')
+        //   return i.Thematic
+        // })  
+      }
     },
     // filterData() {
 

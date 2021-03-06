@@ -18,7 +18,6 @@ const routes = [
     name: 'Search',
     component: Search,
     props: true,
-  
   }
 ]
 
