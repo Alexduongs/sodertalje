@@ -4,7 +4,6 @@
     <autocomplete />
     <FilterBar :Elements="Elements" />
     <doclist :doclist="doclist" />
-    <p>{{ $route.params.Thematic }}</p>
   </div>
 </template>
 
@@ -42,10 +41,10 @@ export default {
     },
     filteredList() {
       this.doclist = this.Elements.filter((i) => {
-        return i.Thematic === i.Thematic;
-      });
+        return i.Thematic === i.Thematic 
+      })
     },
-  },
+  },  
 };
 </script>
 
