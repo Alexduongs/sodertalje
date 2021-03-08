@@ -1,7 +1,7 @@
 <template>
   <div class="section">
     <div class="hej" v-for="item in doclist" :key="item.Label" :item="item">
-     <div v-if="item.Thematic === $route.params.Thematic"> 
+      <div v-if="item.Thematic === $route.params.Thematic">
         <div class="section">
           <div class="img-container">
             <img v-bind:src="item.CoverImg" width="100" height="130" />
@@ -10,12 +10,39 @@
             class="title"
             :style="[
               item.Status == 'Gällande'
-                ? {background: '#87BDC9'}
+                ? { background: '#87BDC9' }
                 : item.Status == 'Remiss'
-                ? {background: '#E9A15F'}
+                ? { background: '#E9A15F' }
                 : item.Status == 'Under framtagande'
-                ? {background: '#5F8C9A'}
-                : {background: '#C45941'},
+                ? { background: '#5F8C9A' }
+                : { background: '#C45941' },
+            ]"
+          >
+            <span class="labelTitle">
+              {{ item.Label }}
+            </span>
+            <div class="type">
+              <span>{{ item.Documenttype }} </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div v-else-if="$route.params.Elements">
+        <div class="section">
+          <div class="img-container">
+            <img v-bind:src="item.CoverImg" width="100" height="130" />
+          </div>
+          <div
+            class="title"
+            :style="[
+              item.Status == 'Gällande'
+                ? { background: '#87BDC9' }
+                : item.Status == 'Remiss'
+                ? { background: '#E9A15F' }
+                : item.Status == 'Under framtagande'
+                ? { background: '#5F8C9A' }
+                : { background: '#C45941' },
             ]"
           >
             <span class="labelTitle">
@@ -28,23 +55,20 @@
         </div>
       </div>
     </div>
-    </div>
-  
-  
+  </div>
 </template>
 
 <script>
 export default {
-   props: ["doclist"],
+  props: ["doclist"],
   components: {},
   computed: {},
   methods: {},
-}
-  
+};
 </script>
 
 <style lang="scss" scoped>
-@import './src/_variables.scss';
+@import "./src/_variables.scss";
 
 body {
   margin: 0;
