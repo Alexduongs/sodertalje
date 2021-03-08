@@ -32,7 +32,7 @@ export default {
     },
   },
   mounted() {
-    //this.$store.dispatch("getDocuments"); //Verkar inte behövas????
+    this.$store.dispatch("getDocuments"); //Verkar inte behövas????
     this.filteredList();
   },
   
