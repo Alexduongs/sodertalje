@@ -2,6 +2,7 @@
   <div>
     <sidebar />
     <autocomplete />
+    <FilterBar :Elements="Elements" />
     <doclist :doclist="doclist" />
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import Sidebar from "../components/sidebar.vue";
 import Autocomplete from "../components/autocomplete.vue";
+import FilterBar from "../components/filterBar.vue";
 import Doclist from "../components/doclist.vue";
 
 export default {
@@ -20,6 +22,7 @@ export default {
   components: {
     Sidebar,
     Autocomplete,
+    FilterBar,
     Doclist,
   },
   computed: {
@@ -28,20 +31,20 @@ export default {
     },
   },
   mounted() {
-    this.$store.dispatch("getDocuments");
-     this.filteredList();
+    this.$store.dispatch("getDocuments"); //Verkar inte behövas????
+    this.filteredList();
   },
-  
+
   methods: {
     goto(url) {
       window.open(url, "_blank").focus();
     },
     filteredList() {
-      this.doclist = this.$store.state.Elements.filter(
-        (i) => i.Thematic === i.Thematic
-      );
+      this.doclist = this.Elements.filter((i) => {
+        return i.Thematic === i.Thematic 
+      })
     },
-  },
+  },  
 };
 </script>
 
